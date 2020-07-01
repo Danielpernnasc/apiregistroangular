@@ -1,0 +1,1259 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Mercearia</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Mercearia</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Mercearia</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco-left margin_linha">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-sm-12 border_gray">
+                        <select class="select_busca" name="" id="">
+                            <option value="">Ordenar Por</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-3 margin-paragrafo">
+                <p>Monstrando 16 resultados de 72</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-9  padding_zero">
+                        <input  class="campo" type="text" placeholder="Buscar Produtos">
+                    </div>
+                    <div class="col-3 lupa_altura">
+                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':30}"></svg-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha espaco-left">
+            <div class="col-md-9 padding_zero">
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc1')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_1" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Amendoim Cru Descascado Miudo Hikari</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_5}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc2')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_2"  alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Atum Ralado No Oléo Yeli</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_12}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc3')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_3" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Atum Yeli Ralado</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_12}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc4')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_4" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Biscoito Recheado Passatempo</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_14}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc5')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_5" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Biscoito Recheado Trakinas</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_143}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc6')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_6" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Biscoito Recheado Trakinas Energia Sabor Morango</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_143}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc7')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_7" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Chicharro Ralado Randy</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_410}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc8')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_8" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Creme de Leite Italac TP</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_2}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc9')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_9" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Creme de Leite Itambé</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_1}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc10')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_10" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Creme de Leite Itambé</h6>
+                                </div>
+                            </div>
+                    
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_3}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc11')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_11" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Ervilha Quero Lata</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_1020g}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc12')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_12" alt="" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Ervilha Quero Lata</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_2}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc13')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_13" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Farina de Trigo<br> Estrela D’Alva Tipo 1</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_1}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc14')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_14" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Farinha de Trigo Especial Sol Dianas</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_1}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc15')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_15" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Feijão Caldo Nobre<br> Tipo 1</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_1}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('merc16')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="merc_16" alt="" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Leite Condensado<br>
+                                        Italac TP</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_395}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <h5>Categorias de Produtos</h5>
+                    </div>
+                </div>
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <ul class="pasta">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_bebidas()">
+                                            <h5>Bebidas</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_carnes()">
+                                            <h5>Carnes</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pereciveis()">
+                                            <h5>Perecíveis</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_higiene()">
+                                            <h5>Higiene</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_limpeza()">
+                                            <h5>Limpeza</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_mercearia()">
+                                            <h5>Mercearia</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_hortifruti()">
+                                            <h5>Hortifruti</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pet()">
+                                            <h5>Pet</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12 font-red-calvo">
+                                        <span class="font-red-calvo" (click)="link_categorias_outros()">
+                                            <h5>Outros</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<modal-merc id="merc1">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]=" merc_1" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc1')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Amendoim Cru Descascado Miudo Hikari</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_5 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-merc>
+<modal-merc id="merc2">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]=" merc_2" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc2')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Atum Ralado No Oléo Yeli</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_12 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc3">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_3" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc3')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Atum Yeli Ralado</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_12 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc4">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_4" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc4')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Biscoito Recheado Passatempo</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_14 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc5">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_5" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc5')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Chicharro Ralado Randy</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_143 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc6">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_6" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc6')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Biscoito Recheado Trakinas Energia Sabor Morango</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_143 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc7">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_7" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc7')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Chicharro Ralado Randy</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_410 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc8">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_8" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc8')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Creme de Leite Italac TP</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_2 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc9">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_9" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc9')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Creme de Leite Itambé</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ kg_1 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc10">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_10" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc10')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Creme de Leite Itambé</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_3 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc11">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_11" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc11')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Ervilha Quero Lata</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ kg_1020g }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc12">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_12" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc12')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Farina de Trigo Estrela D’Alva Tipo 1</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ kg_1 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc13">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_13" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc13')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Farina de Trigo Estrela D’Alva Tipo 1</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ kg_1 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc14">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_14" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc14')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Farinha de Trigo Especial Sol Dianas</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ kg_1 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc15">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_15" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc15')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Feijão Caldo Nobre Tipo 1</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ kg_1}}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>
+<modal-merc id="merc16">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="merc_16" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('merc16')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Mercearia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Leite Condensado Italac TP</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_395 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-merc>

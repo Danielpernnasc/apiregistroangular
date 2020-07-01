@@ -1,0 +1,75 @@
+<div class="row justify-content-center">
+    <div class="col-8 desktop">
+        <div class="row linha-acima" >
+            <div class="font-gray-calvo">
+                <h5>CRUD</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Clientes</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 margin_top_mobile mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>CRUD</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Clientes</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <div class="row margin_3px">
+            <div class="col-md-12 titulo-parc">
+                <h2>Clientes</h2>
+            </div>
+    
+        </div>
+        <div class="borda-bottom"></div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <tr>
+                        <td>id</td>
+                        <td>{{clienteData['p_id']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Nome</td>
+                        <td>{{clienteData['p_nome']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Endereço</td>
+                        <td>{{clienteData['p_endereco']}}</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td>{{clienteData['p_email']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Telefone</td>
+                        <td>{{clienteData['p_telefone']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Senha</td>
+                        <td>{{clienteData['p_senha']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Confirma</td>
+                        <td>{{clienteData['p_confirma']}}</td>
+                    </tr>
+                </table>
+                <br>
+                <button class="btn btn-warning" (click)="navigation('cliente')">Voltar</button>
+            </div>
+        </div>
+    </div>
+</div>

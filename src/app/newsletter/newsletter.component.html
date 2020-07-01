@@ -1,0 +1,53 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row linha-acima margin-left">
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>{{nl}}</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>{{rinf}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <h2>{{nl}}</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc margin_news_bottom padding_zero">
+        <div class="row">
+            <div class="col-sm-12">
+              <h6>{{CNE}}</h6>
+            </div>
+        </div>
+        <form id="esconder_form" [formGroup]="registerForm" (ngSubmit)="onSubmit_newsletter()"> 
+            <div class="row">
+                <div class="col-sm-3">
+                    <input type="text" formControlName="email" class="form-control" [ngClass]="{'is-invalid': submitted && f.email.errors }"  />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div class="alert_left" *ngIf="f.email.errors.required">{{need}}</div>
+                        <div class="alert_left" *ngIf="f.email.errors.email">{{error}}</div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn-cadastrar_news">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div  id="sucesso" class="col-sm-12 sucesso">
+                <span>
+                    <svg-icon [src]="ok" [svgStyle]="{ 'width.px':35}"></svg-icon>
+                </span>
+                &nbsp;
+                <span>{{sucess}}</span>
+            </div>
+        </div>   
+    </div>
+</div>

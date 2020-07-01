@@ -1,0 +1,1258 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Limpeza</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Limpeza</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Limpeza</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco-left margin_linha">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-sm-12 border_gray">
+                        <select class="select_busca" name="" id="">
+                            <option value="">Ordenar Por</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-3 margin-paragrafo">
+                <p>Monstrando 16 resultados de 72</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-9  padding_zero">
+                        <input  class="campo" type="text" placeholder="Buscar Produtos">
+                    </div>
+                    <div class="col-3 lupa_altura">
+                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':30}"></svg-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha espaco-left">
+            <div class="padding_zero col-md-9">
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp1')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_1"  alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Amaciante Baby Soft Toque Carinho</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{lt_2}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp2')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_2"  alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Amaciante Baby Soft Azul</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{lt_2}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp3')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_3" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Amaciante Baby Soft Rosa</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{lt_2}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp4')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_4" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Amaciante de Roupas Downy Concentrado</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp5')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_5" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Amaciante de Roupas Downy Conc. Brisa de Verão</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp6')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_6" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Amaciante de Roupas Downy Conc.Frescor Prim.</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp7')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_7" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Amaciante de Roupas Downy Concentrado Jardim de Rosas</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp8')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_8" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Ariel Solução Total</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{lt_1}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp9')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_9" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Desinfetante Bufalo</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_7_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp10')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_10" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Detergente Líquido Ypê Clear</h6>
+                                </div>
+                            </div>
+                    
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp11')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_11" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Detergente Líquido Ypê Neutro</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp12')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_12" alt="" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Detergente Minuano Tipos</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp13')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_13" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Detergente Ypê Limão</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp14')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_14" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Detergente Ypê Maçã</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp15')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_15" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Esponja de Aço Bom Bril</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-7 centralizar">
+                                    <h6>{{uni_8}}</h6>
+                                </div>
+                                <div class="col-sm-5 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 padding_zero_">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('limp16')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="limp_16" alt="" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Esponja de Aço Bom Bril Eco</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_60}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <h5>Categorias de Produtos</h5>
+                    </div>
+                </div>
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <ul class="pasta">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_bebidas()">
+                                            <h5>Bebidas</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_carnes()">
+                                            <h5>Carnes</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pereciveis()">
+                                            <h5>Perecíveis</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_higiene()">
+                                            <h5>Higiene</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_limpeza()">
+                                            <h5>Limpeza</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_mercearia()">
+                                            <h5>Mercearia</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_hortifruti()">
+                                            <h5>Hortifruti</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pet()">
+                                            <h5>Pet</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12 font-red-calvo">
+                                        <span class="font-red-calvo" (click)="link_categorias_outros()">
+                                            <h5>Outros</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<modal-limp id="limp1">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_1" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp1')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Amaciante Baby Soft Toque Carinho</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ lt_2 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-limp>
+<modal-limp id="limp2">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_2" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp2')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Amaciante Baby Soft Azul</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ lt_2 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-limp>
+<modal-limp id="limp3">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_3" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp3')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Amaciante Baby Soft Rosa</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ lt_2 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-limp>
+<modal-limp id="limp4">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_4" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp4')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Amaciante de Roupas Downy Concentrado</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-limp>
+<modal-limp id="limp5">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_5" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp5')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Amaciante de Roupas Downy Conc. Brisa de Verão</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-limp>
+<modal-limp id="limp6">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_6" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp6')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Amaciante de Roupas Downy Conc.Frescor Prim.</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-limp>
+<modal-limp id="limp7">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_7" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp7')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Amaciante de Roupas Downy Concentrado Jardim de Rosas</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-limp>
+<modal-limp id="limp8">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_8" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp8')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Ariel Solução Total</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ lt_1 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-limp>
+<modal-limp id="limp9">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_9" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp9')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Desinfetante Bufalo</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_7_5 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-limp>
+<modal-limp id="limp10">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_10" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp10')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Detergente Líquido Ypê Clear</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-limp>
+<modal-limp id="limp11">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_11" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp11')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Detergente Líquido Ypê Clear</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-limp>
+<modal-limp id="limp12">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_12" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp12')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Detergente Líquido Ypê Clear</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-limp>
+<modal-limp id="limp13">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_13" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp13')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Detergente Ypê Limão</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-limp>
+<modal-limp id="limp14">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_14" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp14')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Detergente Ypê Limão</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-limp>
+<modal-limp id="limp15">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_15" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp15')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Esponja de Aço Bom Bril</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  uni_8 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-limp>
+<modal-limp id="limp16">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limp_16" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('limp16')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Limpeza</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Esponja de Aço Bom Bril Eco</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_60 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-limp>

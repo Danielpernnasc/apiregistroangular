@@ -1,0 +1,210 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Hortifruti</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 margin_top_mobile mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Hortifruti</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Hortifruti</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco-left margin_linha">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-sm-12 border_gray">
+                        <select class="select_busca" name="" id="">
+                            <option value="">Ordenar Por</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-3 margin-paragrafo">
+                <p>Monstrando 16 resultados de 72</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-9  padding_zero">
+                        <input  class="campo" type="text" placeholder="Buscar Produtos">
+                    </div>
+                    <div class="col-3 lupa_altura">
+                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':30}"></svg-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha espaco-left">
+            <div class="col-md-9 paddin_zero">
+                <router-outlet></router-outlet>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="link" [routerLink]="['1']" routerLinkActive="active_pag">1</span>
+                            </div>
+                            <div class="col-1">
+                                <span class="link" [routerLink]="['2']" routerLinkActive="active_pag">2</span>
+                            </div>
+                            <!-- <div class="col-1">
+                                <a [routerLink]="['3']">3</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <h5>Categorias de Produtos</h5>
+                    </div>
+                </div>
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <ul class="pasta">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_bebidas()">
+                                            <h5>Bebidas</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_carnes()">
+                                            <h5>Carnes</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pereciveis()">
+                                            <h5>Perecíveis</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_higiene()">
+                                            <h5>Higiene</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_limpeza()">
+                                            <h5>Limpeza</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_mercearia()">
+                                            <h5>Mercearia</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_hortifruti()">
+                                            <h5>Hortifruti</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pet()">
+                                            <h5>Pet</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12 font-red-calvo">
+                                        <span class="font-red-calvo" (click)="link_categorias_outros()">
+                                            <h5>Outros</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

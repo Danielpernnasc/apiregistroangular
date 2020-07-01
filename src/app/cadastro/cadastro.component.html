@@ -1,0 +1,89 @@
+<div class="row justify-content-center">
+    <div class="col-8 desktop">
+        <div class="row linha-acima" >
+            <div class="font-gray-calvo">
+                <h5>CRUD</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Cadastrar</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 margin_top_mobile mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>CRUD</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Cadastrar</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <div class="row margin_3px">
+            <div class="col-md-12 titulo-parc">
+                <h2>Cadastro</h2>
+            </div>
+        </div>
+        <div class="borda-bottom"></div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <form [formGroup]="clienteForm" (ngSubmit)="saveClientes(clienteForm.value)">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" class="form-control" placeholder="Digite seu nome!" formControlName="nome" required>
+                        <div class="alert-danger" *ngIf="!clienteForm.controls['nome'].valid && (clienteForm.controls['nome'].touched)">
+                            <div [hidden]="!clienteForm.controls['nome'].errors.required" >Digite seu Nome!</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Endereço</label>
+                        <input type="text" class="form-control" placeholder="Digite seu endereço" formControlName="endereco" required>
+                        <div class="alert-danger" *ngIf="!clienteForm.controls['endereco'].valid && (clienteForm.controls['endereco'].touched)">
+                            <div [hidden]="!clienteForm.controls['endereco'].errors.required">Digite seu Endereço!</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="text" class="form-control" placeholder="Digite seu e-mail" formControlName="email" required>
+                        <div class="alert-danger" *ngIf="!clienteForm.controls['email'].valid && (clienteForm.controls['email'].touched)">
+                            <div [hidden]="!clienteForm.controls['email'].errors.required">Digite sua e-mail!</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="text" class="form-control" placeholder="Digite seu telefone" formControlName="telefone" required>
+                        <div class="alert-danger" *ngIf="!clienteForm.controls['telefone'].valid && (clienteForm.controls['telefone'].touched)">
+                            <div [hidden]="!clienteForm.controls['telefone'].errors.required">Digite seu telefone</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" class="form-control" placeholder="Digite sua senha" formControlName="senha" required>
+                        <div class="alert-danger" *ngIf="!clienteForm.controls['senha'].valid && (clienteForm.controls['senha'].touched)">
+                            <div [hidden]="!clienteForm.controls['senha'].errors.required">Digite sua senha</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirma a senha</label>
+                        <input type="password" class="form-control" placeholder="Confirme sua senha" formControlName="confirma" required>
+                        <div class="alert-danger" *ngIf="!clienteForm.controls['confirma'].valid && (clienteForm.controls['confirma'].touched)">
+                            <div [hidden]="!clienteForm.controls['confirma'].errors.required">Confirme sua Senha</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" [disabled]="!clienteForm.valid">
+                        Enviar
+                    </button>
+                </form> 
+            </div>
+        </div>
+    </div>
+</div>

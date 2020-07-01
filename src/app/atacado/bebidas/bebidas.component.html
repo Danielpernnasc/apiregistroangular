@@ -1,0 +1,1756 @@
+
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Bebidas</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Bebidas</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Bebidas</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco-left margin_linha">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-sm-12 border_gray">
+                        <select class="select_busca" name="" id="">
+                            <option value="">Ordenar Por</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-3 margin-paragrafo">
+                <p>Monstrando 16 resultados de 72</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-9 padding_zero">
+                        <input  class="campo" type="text" placeholder="Buscar Produtos">
+                    </div>
+                    <div class="col-3 lupa_altura">
+                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':30}"></svg-icon>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha espaco-left">
+            <div class="col-md-9 padding_zero">
+                <div id="escondertable" class="row">
+                    <div class="col-sm-12">
+                        <div class="row margin_linha">
+                            <div class="col-sm-3" >
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button class="btn_lupa" (click)="openModal_bebida('bebida-1')">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_um" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Água Mineral Indaia</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{litro_5}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                                            </svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-2')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_dois" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Água Mineral Indaia</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_500}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-3')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_tres" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Água Mineral Minalba Sem Gás</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{litro_5}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-4')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_quatro" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente 21 Pirassununga</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_965}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha" >
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-5')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produtos_" [src]="bebida_cinco" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente 51</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{caixa}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-6')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_seis" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente de Cana Kariri</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_960}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-7')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_sete" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente Velho Barreiro – Hofer</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_810}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-8')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produtos_" [src]="bebida_oito" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente Velho Barreiro</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{caixa}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-9')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_nove" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente Ypioca Ouro</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_960}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-10')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_dez" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                <div class="row">
+                                    <div class="col-sm-12 legenda_produtos">
+                                            <h6>Bebida Energética Fusion</h6>
+                                    </div>
+                                </div>
+                        
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_250}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-11')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_onze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cachaça Envelhecida São Francisco</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_970}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-12')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_doze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Catuaba Selvagem</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{litro_1}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-13')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_treze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                <div class="row">
+                                    <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cerveja Skol Lata</h6>
+                                    </div>
+                                </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_350}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-14')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_quatorze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cerveja Brahma Garrafa</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{litro_1}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-15')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_quinze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cerveja Brahma</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_350}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-16')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_dezesseis"  alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cerveja Itaipava Garrafa</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_600}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>   
+                <div id="escondertable" class="row">
+                    <div class="col-sm-12">
+                        <div class="row margin_linha">
+                            <div class="col-sm-3" >
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button class="btn_lupa" (click)="openModal_bebida('bebida-1')">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_um" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Água Mineral Indaia</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{litro_5}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                                            </svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-2')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_dois" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Água Mineral Indaia</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_500}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-3')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_tres" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Água Mineral Minalba Sem Gás</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{litro_5}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-4')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_quatro" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente 21 Pirassununga</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_965}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha" >
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-5')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produtos_" [src]="bebida_cinco" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente 51</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{caixa}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-6')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_seis" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente de Cana Kariri</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_960}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-7')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produto" [src]="bebida_sete" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente Velho Barreiro – Hofer</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_810}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-8')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img class="central_produtos_" [src]="bebida_oito" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente Velho Barreiro</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{caixa}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-9')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_nove" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Aguardente Ypioca Ouro</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_960}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-10')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_dez" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                <div class="row">
+                                    <div class="col-sm-12 legenda_produtos">
+                                            <h6>Bebida Energética Fusion</h6>
+                                    </div>
+                                </div>
+                        
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_250}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-11')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_onze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cachaça Envelhecida São Francisco</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_970}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-12')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_doze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Catuaba Selvagem</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{litro_1}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-13')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_treze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                <div class="row">
+                                    <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cerveja Skol Lata</h6>
+                                    </div>
+                                </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_350}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-14')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_quatorze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cerveja Brahma Garrafa</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{litro_1}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-15')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_quinze" alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cerveja Brahma</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_350}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="campo_produtos">
+                                    <div class="row">
+                                        <div class="col-md-12 right_lupa">
+                                            <button (click)="openModal_bebida('bebida-16')" class="btn_lupa">
+                                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img [src]="bebida_dezesseis"  alt="" class="central_produto">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 legenda_produtos">
+                                            <h6>Cerveja Itaipava Garrafa</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row space-bottom">
+                                        <div class="centralizar">
+                                            <h6>{{ml_600}}</h6>
+                                        </div>
+                                        <div class="central_right">
+                                            <svg-icon [src]="orcamento" [svgStyle]="{'width.px':50 }"></svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <span>1</span>
+                            </div>
+                            <div class="col-sm-1">
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+            <div class="col-md-3">
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <h5>Categorias de Produtos</h5>
+                    </div>
+                </div>
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <ul class="pasta">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_bebidas()">
+                                            <h5>Bebidas</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_carnes()">
+                                            <h5>Carnes</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pereciveis()">
+                                            <h5>Perecíveis</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_higiene()">
+                                            <h5>Higiene</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_limpeza()">
+                                            <h5>Limpeza</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_mercearia()">
+                                            <h5>Mercearia</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_hortifruti()">
+                                            <h5>Hortifruti</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pet()">
+                                            <h5>Pet</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12 font-red-calvo">
+                                        <span class="font-red-calvo" (click)="link_categorias_outros()">
+                                            <h5>Outros</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-modal id="bebida-1">     
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_um" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-1')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Água Mineral Indaia</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ litro_5 }}</h3>
+            </div>
+        </div>
+    </div>  
+</app-modal>
+<app-modal id="bebida-2">     
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_dois" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-2')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Água Mineral Indaia</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_500}}</h3>
+            </div>
+        </div>
+    </div>  
+</app-modal>
+<app-modal id="bebida-3">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_tres" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-3')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Água Mineral Minalba Sem Gás</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{litro_5}}</h3>
+            </div>
+        </div>
+    </div> 
+</app-modal>
+<app-modal id="bebida-4">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_quatro" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-4')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Aguardente 21 Pirassununga</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_965}}</h3>
+            </div>
+        </div>
+    </div> 
+</app-modal>
+<app-modal id="bebida-5">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_cinco" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-5')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Aguardente 51</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{caixa}}</h3>
+            </div>
+        </div>
+    </div> 
+</app-modal>
+<app-modal id="bebida-6">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_seis" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-6')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Aguardente de Cana Kariri</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_960}}</h3>
+            </div>
+        </div>
+    </div> 
+</app-modal>
+<app-modal id="bebida-7">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_sete" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-7')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Aguardente Velho Barreiro – Hofer</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_810}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-8">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_oito" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-8')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Aguardente Velho Barreiro</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{caixa}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-9">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_nove" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-9')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Aguardente Ypioca Ouro</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_960}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-10">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_dez" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-10')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Bebida Energética Fusion</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_250}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-11">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_onze" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-11')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cachaça Envelhecida São Francisco</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_970}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-12">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_doze" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-12')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Catuaba Selvagem</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{litro_1}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-13">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_treze" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-13')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cerveja Skol Lata</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_350}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-14">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_quatorze" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-14')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cerveja Brahma Garrafa</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{litro_1}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-15">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_quinze" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-15')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cerveja Brahma</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_350}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+<app-modal id="bebida-16">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="bebida_dezesseis" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('bebida-16')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Bebidas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cerveja Brahma</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-8 offset-sm-1">
+                <h3>{{ml_600}}</h3>
+            </div>
+        </div>
+    </div>
+</app-modal>
+

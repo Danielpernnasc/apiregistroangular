@@ -1,0 +1,869 @@
+<div class="container-fluid">
+  <nav class="nav_top">
+    <div class="row header_footercalvo">
+      <div class="row topo_menu justify-content-center">
+        <div class="col-10 margin_top_read">
+          <div class="row">
+            <div class="col-4">
+              <div class="row">
+                <div class="col-sm-8 offset-sm-4 padding_zero">
+                  <span class="yellow_calvo">Fale Conosco</span> &nbsp;<span class="branco_calvo">11 2723.6000</span>
+                </div>
+              </div>
+            </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-sm-6 yellow_calvo">
+                    <h6>Nossos Aplicativos</h6>
+                  </div>
+                  <div class="col-sm-1 centro">
+                    <svg-icon [src]="apple"></svg-icon>
+                  </div>
+                  <div class="col-sm-1 centro">
+                    <svg-icon [src]="android"></svg-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-sm-3 right branco_calvo">
+                    <span class="btn_conta" (click)="openModal('custom-modal-1')">{{conta}}</span>
+                  </div>
+                  <div class="col-sm-3 left yellow_calvo">
+                    <span class="btn_conta" (click)="openModal('custom-modal-2')" >Entrar</span>
+                  </div>
+                  <div class="col-sm-3 branco_calvo">
+                    <span class="btn_conta">Logout</span>
+                  </div>
+                  <div class="col-sm-3 branco_calvo">
+                    <span class="btn_conta" routerLink="dashboard" routerLinkActive="active">Dashboard</span>
+                  </div>
+                </div>
+              </div>  
+          </div>  
+        </div>
+      </div>
+      <div class="row menu_mobile">
+        <div class="col-4">
+            <a [routerLink]="'.'"><img class="logo_mobile" [src]="logo"></a>
+            <div id="mySidenav" class="sidenav">
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <span class="closebtn" (click)="closeNav()">&times;</span>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 topo_fale_conosco_mobile">
+                            <span class="yellow_calvo">
+                               Fale Conosco
+                            </span><br>
+                            <span class="branco_calvo">
+                              11 2723.6000
+                            </span>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <span (click)="closeNav()"  [routerLink]="'.'">
+                              <img class="logo" [src]="logo">
+                            </span>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <input type="text" class="input_mobile">
+                          <div class="lupa_mobile">
+                            <svg-icon [src]="lupa" [svgStyle]="{ 'width.px':20}"></svg-icon>
+                          </div> 
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                    <a class="link_mob" [routerLink]="['/home']">
+                      <span (click)="closeNav()">Home</span>
+                    </a>
+                    <a class="link_mob" [routerLink]="['/empresa']">
+                      <span (click)="closeNav()">
+                          Empresa
+                      </span>
+                    </a>
+                    <span class="link_mob_btn"  [routerLink]="['/atacado']">Atacado
+                        <svg-icon [src]="seta_baixo" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                    </span> 
+                    <div class="dropdown-container">
+                        <a class="sub_link_mob" [routerLink]="['/atacado/bebidas']">
+                            <span (click)="closeNav()">
+                                Bebidas
+                            </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/carnes']">
+                          <span (click)="closeNav()">
+                              Carnes
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/pereciveis']">
+                            <span (click)="closeNav()">
+                              Pereciveis
+                            </span>
+                          </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/higiene']">
+                          <span (click)="closeNav()">
+                            Higiene
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/limpeza']">
+                          <span (click)="closeNav()">
+                            Limpeza
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/mercearia']">
+                          <span (click)="closeNav()">
+                            Mercearia
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/hortifruti']">
+                          <span (click)="closeNav()">
+                            Hortifruti
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/institucional']">
+                          <span (click)="closeNav()">
+                            Institucional
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/pet']">
+                          <span (click)="closeNav()">
+                            Pet
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/papelaria']">
+                          <span (click)="closeNav()">
+                              Papelaria
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/atacado/outros']">
+                          <span (click)="closeNav()">
+                            Outros
+                          </span>
+                        </a>
+                        <a class="sub_link_mob_lista" [routerLink]="['/atacado/lista']">
+                          <span (click)="closeNav()">
+                            Lista Completa de Produtos
+                          </span>
+                        </a>
+                    </div>
+                    <a class="link_mob" [routerLink]="['/parceiros']">
+                      <span (click)="closeNav()">
+                        Parceiros
+                      </span>
+                    </a>
+                    <a href="" class="link_mob" [routerLink]="['/jornal']">
+                      <span (click)="closeNav()">
+                        Jornal
+                      </span>
+                    </a>
+                    <span class="link_mob_btn"  [routerLink]="['/contato']">Contato
+                        <svg-icon [src]="seta_baixo" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                    </span>
+                    <div class="dropdown-container">
+                        <a class="sub_link_mob" [routerLink]="['/contato/fale-conosco']">
+                          <span (click)="closeNav()">
+                            Fale Conosco
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/contato/televendas']">
+                          <span (click)="closeNav()">
+                              Televendas
+                          </span>
+                        </a>
+                        <a class="sub_link_mob" [routerLink]="['/contato/trabalhe-conosco']">
+                          <span (click)="closeNav()">
+                            Trabalhe na Calvo
+                          </span>
+                        </a>
+                    </div>    
+      
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="row topo_fale_conosco_mobile">
+                          <div class="col-sm-12 branco_calvo">
+                              <span class="btn_conta">Criar Conta</span>
+                          </div>
+                        </div>
+                        <div class="row topo_fale_conosco_mobile">
+                          <div class="col-sm-12 yellow_calvo">
+                              <span class="btn_conta">Entrar</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 yellow_calvo">
+                        <h6>Nossos Aplicativos</h6>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 icones_app_mobile">
+                        <svg-icon [src]="apple"></svg-icon>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 icones_app_mobile">
+                        <svg-icon [src]="android"></svg-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-7">
+           <div class="row ">
+             <div class="col-sm-12">
+                <span class="icon" (click)="openNav()">&#9776;</span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="row background_white_calvo">
+      <div class="col-10 topo_menu">
+        <div class="row justify-content-center topo-fixo">
+          <div class="col-2 offset-1 close-nav">
+            <a class="close-nav" [routerLink]="'.'"><img class="logo" [src]="logo"></a>
+          </div>
+          <div class="col-md-5">
+            <div class="row busca_home">
+              <div class="col-md-10">
+                <input class="input_busca_home" type="text" placeholder="Pesquisa de Produtos">
+              </div>
+              <div id="lupa" class="col-sm-2">
+                <svg-icon [src]="lupa" [svgStyle]="{ 'width.px':35}"></svg-icon>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="row">
+              <div class="col-sm-8">
+                <button class="btn_calvo close-nav" (click)="orcamento_produtos()">Orçamento</button>
+              </div>
+              <div class="col-sm-4 padding_zero toright">
+                <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div  class="menu_superior_fixed row justify-content-center">
+          <div class="col-md-8 offset-md-1 padding_zero">
+            <div class="row">
+              <div class="col-md-2 font_calvo_black">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <a class="color_link" [routerLink]="['/home']" routerLinkActive="active_link">Home</a>
+                  </div>
+                  <div class="col-sm-2">
+                    <svg-icon [src]="setadow" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 font_calvo_black padding_zero">
+                <div class="row">
+                  <div class="col-sm-7 padding_zero">
+                    <a class="color_link close-nav" [routerLink]="['/empresa']" routerLinkActive="active_link">Empresa</a>
+                  </div>
+                  <div class="col-sm-2 padding_zero">
+                    <svg-icon [src]="setadow" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 font_calvo_black">
+                <div class="row" >
+                  <div class="col-sm-7 padding_zero">
+                    <a class="color_link close-nav" [routerLink]="['/atacado']" routerLinkActive="active_link">Atacado</a>
+                  </div>
+                  <div class="campo-submenu col-sm-2 padding_zero">
+                    <span  (click)="onClick_atacado()"  class="btn-invisivel">
+                      <svg-icon [src]="setadow" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                    </span>
+                  </div>
+                    <div id="myDropdown_atacado" class="dropdown-content">
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/bebidas']">Bebidas</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/carnes']">Carnes</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/pereciveis']">Perecíveis</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/higiene']">Higiene</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/limpeza']">Limpeza</a>
+                      <a class="color_link_sub close-nav " [routerLink]="['/atacado/mercearia']">Mercearia</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/hortifruti']">Hortifruti</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/institucional']">Institucional</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/pet']">Pet</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/papelaria']">Papelaria</a>
+                      <a class="color_link_sub close-nav" [routerLink]="['/atacado/outros']">Outros</a>
+                      <a class="link-lista close-nav" [routerLink]="['/atacado/lista']">Lista Completa de Produtos</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-2 font_calvo_black">
+                <div class="row" >
+                  <div class="col-sm-8 padding_zero">
+                    <a class="color_link close-nav" [routerLink]="['/parceiros']" routerLinkActive="active_link">Parceiros</a>
+                  </div>
+                  <div class="col-sm-2 padding_zero">
+                    <svg-icon [src]="setadow" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="font_calvo_black col-2">
+                <div class="row" >
+                  <div class="col-sm-6">
+                    <a class="color_link close-nav" [routerLink]="['/jornal']" routerLinkActive="active_link">Jornal</a>
+                  </div>
+                  <div class="col-sm-2">
+                    <svg-icon [src]="setadow" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="font_calvo_black col-2">
+                <div class="row">
+                  <div class="col-sm-7 padding_zero">
+                    <a class="color_link close-nav" [routerLink]="['/contato']" routerLinkActive="active_link">Contato</a>
+                  </div>
+                  <div class="col-sm-2 padding_zero">
+                    <span  (click)="onClick_contato()" class="btn-invisivel">
+                      <svg-icon [src]="setadow" [svgStyle]="{ 'width.px':30}"></svg-icon>
+                    </span>
+                  </div>
+                  <div id="myDropdown_contato"  class="dropdown-content">
+                      <a class="color_link_sub close-nav" [routerLink]="'/contato/fale-conosco'" >Fale Conosco</a>
+                      <a class="color_link_sub close-nav" [routerLink]="'/contato/televendas'">Televendas</a>
+                      <a class="color_link_sub close-nav " [routerLink]="'/contato/trabalhe-conosco'">Trabalhe na Calvo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </nav>
+  <div class="close-nav">
+    <router-outlet></router-outlet>
+    <div *ngIf='Footer' class="row newsletter">
+        <div class="col-8 offset-2 desktop">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-sm-12 branco_calvo">
+                  <h4>{{CN}}</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-sm-12 branco_calvo center">
+                  <h4>Siga-nos nas Redes Sociais</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-sm-12 branco_calvo center">
+                  <h4>Receba nossas ofertas no seu</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-10">
+                    <form id="esconder_form" [formGroup]="registerForm" (ngSubmit)="onSubmit_newsletter()"> 
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <input type="text" formControlName="email" class="formcontrol" [ngClass]="{'campo_invalido': submittednews && f.email.errors }"  />
+                                <div *ngIf="submittednews && f.email.errors" class="email_invalido">
+                                    <div class="alert_left" *ngIf="f.email.errors.required">{{need}}</div>
+                                    <div class="alert_left" *ngIf="f.email.errors.email">{{error}}</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="btn-cadastrar_news_footer">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div  id="sucesso" class="col-sm-12 sucesso_news">
+                            <span>
+                                <svg-icon [src]="ok" [svgStyle]="{ 'width.px':35}"></svg-icon>
+                            </span>
+                            &nbsp;
+                            <span>{{sucess}}</span>
+                        </div>
+                    </div>   
+                  </div>  
+                </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="col-sm-4 offset-sm-4  social">
+                  <span class="btn_social" (click)="facebooksocial()">
+                      <svg-icon [src]="facebook" [svgStyle]="{ 'width.%':100 }"></svg-icon>
+                  </span>
+                </div>
+                <div class="col-sm-4  social">
+                  <span class="btn_social" (click)="instagramsocial()">
+                      <svg-icon [src]="instagram" [svgStyle]="{ 'width.%':100 }"></svg-icon>
+                  </span>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 offset-sm-1">
+              <div class="row campo_btn_whats">
+                  <div class="col-sm-6 offset-md-2 whats_desk">
+                    <button class="btn_whats" (click)="whatsapp_btn()">
+                        <span>
+                            <svg-icon [src]="whatsapp" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                        </span>
+                        &nbsp;
+                        <span>WHATSAPP</span>
+                    </button>
+                  </div>
+                  <div class="col-sm-6 offset-md-1 whats_mob">
+                    <button class="btn_whats">
+                        <span>
+                            <svg-icon [src]="whatsapp" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                        </span>
+                        &nbsp;
+                        <span>WHATSAPP</span>
+                    </button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mobile">
+           <div class="row justify-content-center">
+              <div class="col-9 mobile_newsletter">
+                <h6>Cadastre-se em Nossa Newsletter</h6>
+                <input type="text"  class="formcontrol"/>
+                  <button class="btn_mobile_enviar">Enviar</button>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-sm-12 mobile_newsletter">
+                <h6>Siga nas redes sociais</h6>
+                <div class="row">
+                  <div class="col-sm-12 flex">
+                      <span class="btn-social" (click)="facebooksocial()">
+                          <svg-icon class="social_mob" [src]="facebook" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                      </span>
+                      <span class="btn-social" (click)="instagramsocial()">
+                          <svg-icon class="social_mob" [src]="instagram" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                      </span>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="row">
+             <div class="col-sm-12 mobile_newsletter center">
+                <h6>Receba nossas ofertas no seu</h6>
+                <button class="btn_whats" (click)="whatsapp_btn()">
+                    <span>
+                      <svg-icon>
+                          <svg-icon class="social_mob_what" [src]="whatsapp" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+                      </svg-icon>
+                    </span>
+                    <span>Whatsapp</span>
+                </button>
+             </div>
+           </div>
+        </div>
+      </div>
+      <div  *ngIf='Footer' class="row header_footercalvo justify-content-center">
+        <div class="col-11 offset-1 Footer_desk">
+          <div class="row">
+            <div class="col-md-5 offset-md-1 branco_calvo ">
+              <h5>Mapa do Site</h5>
+            </div>
+            <div class="col-md-4 branco_calvo text-right">
+                <h6>{{address_calvo}}</h6>
+              </div>
+          </div>
+          <div  class="row">
+            <div class="col-3 offset-md-1 ">
+              <nav>
+                <ul>
+                  <li class="close-nav"><a class="link_footer" [routerLink]="'home'">Home</a></li>
+                  <li class="close-nav"> <a class="link_footer" [routerLink]="'empresa'">Empresa</a> </li>
+                  <li class="close-nav"><a class="link_footer" [routerLink]="'atacado'">Atacado</a></li>
+                  <li class="close-nav"><a class="link_footer" [routerLink]="'parceiros'">Parceiros</a></li>
+                  <li class="close-nav"><a class="link_footer" [routerLink]="'jornal'">Jornal</a></li>
+                  <li class="close-nav"><a class="link_footer" [routerLink]="'contato'">Contado</a></li>
+                  <li class="close-nav"><a class="link_footer" [routerLink]="'newsletter'">Newsletter</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-3 padddin_zero">
+              <img class="central tamanho" [src]="cartoes" alt="">
+            </div>
+            <div class="col-3 altura">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.903137840245!2d-46.50882804939331!3d-23.571922067792354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6770758a867b%3A0xbdd2c7e9016622c0!2sAv.%20Rio%20das%20Pedras%2C%202118%20-%20Jardim%20Aricanduva%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003452-100!5e0!3m2!1spt-BR!2sbr!4v1582290819582!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" frameborder="0"  allowfullscreen="">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 Footer_mobile">
+              <div class="row">
+                  <img class="central tamanho_real" [src]="cartoes" alt="">
+              </div>
+              <div class="row google_maps_mobile">
+                  <div class="col-sm-12 padddin_zero">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.903137840245!2d-46.50882804939331!3d-23.571922067792354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6770758a867b%3A0xbdd2c7e9016622c0!2sAv.%20Rio%20das%20Pedras%2C%202118%20-%20Jardim%20Aricanduva%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003452-100!5e0!3m2!1spt-BR!2sbr!4v1582290819582!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" frameborder="0"  allowfullscreen="">
+                       </iframe>
+                  </div>
+                
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row epaco_mag_cal justify-content-center">
+        <div class="col-9">
+              <div class="row campo_direitos">
+                <div class="col-sm-6 calvoatac">
+                    <p>Calvo Atacadista ® 2020 - Todos os Direitos Reservados</p>
+                </div>
+                <div class="col-sm-6 magictv">
+                    <span>Desenvolvido por Magic TV</span>
+                </div>
+              </div>
+              <div class="row campo_direitos_mob">
+                  <div class="col-sm-6 calvoatac_mob">
+                      <p>Calvo Atacadista ® 2020 - Todos os Direitos Reservados</p>
+                  </div>
+                  <div class="col-sm-6 magictv_mob">
+                      <span>Desenvolvido por Magic TV</span>
+                  </div>
+              </div>
+        </div>
+      </div>
+    <div class="row epaco_mag_cal justify-content-center">
+      <div class="col-9">
+            <div class="row campo_direitos">
+              <div class="col-sm-6 calvoatac">
+                  <p>Calvo Atacadista ® 2020 - Todos os Direitos Reservados</p>
+              </div>
+              <div class="col-sm-6 magictv">
+                  <span>Desenvolvido por Magic TV</span>
+              </div>
+            </div>
+            <div class="row campo_direitos_mob">
+                <div class="col-sm-6 calvoatac_mob">
+                    <p>Calvo Atacadista ® 2020 - Todos os Direitos Reservados</p>
+                </div>
+                <div class="col-sm-6 magictv_mob">
+                    <span>Desenvolvido por Magic TV</span>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<modal-conta id="custom-modal-1">
+  <div class="row bg-blue-login justify-content-center">
+      <div class="col-12">
+          <div class="row">
+              <div class="col-md-12 close-login">
+                <span (click)="closeModal('custom-modal-1')">X</span>
+              </div>
+            </div>
+            <div class="row justify-content-center margin_linha">
+              <div class="col-md-12 titulo_conta">
+                <h1>{{conta}}</h1>
+                <span>{{cr}}</span>
+              </div>
+            </div>
+      </div>
+  </div>
+  <div class="row bg-login">
+    <div class="col-md-12">
+        <div class="row justify-content-center">
+          <div class="col-md-5 campo_logo_conta">
+            <img class="logo_login" [src]="logo" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row bg-white-login">
+    <div class="col-md-12">
+        <div class="row justify-content-center">
+          <div class="col-9 titulo_conta">
+              <div class="row justify-content-center margin_linha">
+                <div class="col-sm-4">
+                    <span class="usario">{{user}}</span>
+                </div>
+                <div class="col-sm-4">
+                  <span class="login" (click)="openModal('custom-modal-2')" (click)="closeModal('custom-modal-1')">{{l}}</span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row justify-content-center margin_linha">
+          <div class="col-8">
+            <form [formGroup]="registroFormu" (ngSubmit)="onSubmit(registroFormu)" autocomplete="off">
+                <div class="row margin_linha box_gray_conta">
+                  <div class="col-sm-12 legenda_conta">
+                    <div class="row">
+                      <div class="col-sm-2 campo-legenda">
+                          <span>{{n}}</span>
+                      </div>
+                      <div class="col-sm-10">
+                        <input type="text" name="nome" formControlName="nome" autocomplete="off" class="campo-input">
+                          <!-- <input class="campo-input" type="text" formControlName="name" [ngClass]="{'campo-invalido': submitted && g.name.errors}">
+                          <div *ngIf="submitted && g.name.errors" class="invalido_cadastro">
+                              <div *ngIf="g.name.errors.required">{{dn}}</div>
+                          </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row margin_linha box_gray_conta">
+                  <div class="col-sm-12 legenda_conta">
+                    <div class="row">
+                      <div class="col-sm-2 campo-legenda">
+                          <span>{{end}}</span>
+                      </div>
+                      <div class="col-sm-12">
+                          <div class="row">
+                            <div class="col-5">
+                                <input type="text" name="rua" formControlName="rua" autocomplete="off" class="campo-input" placeholder="Rua">
+                                <!-- <input class="campo-input" type="text" formControlName="rua" placeholder="Rua" [ngClass]="{'campo-invalido': submitted && g.rua.errors}">
+                                <div *ngIf="submitted && g.rua.errors" class="invalido_cadastro" >
+                                    <div *ngIf="g.rua.errors.required">{{drua}}</div>
+                                </div> -->
+                            </div>
+                            <div class="col-1 padding_zero">
+                                <input type="text" name="numero" formControlName="numero" autocomplete="off" class="campo-input" placeholder="Numero">
+                                <!-- <input type="text" placeholder="Nº" class="campo-input">  -->
+                            </div>
+                            <div class="col-3">
+                                <input type="text" name="complemento" formControlName="complemento" autocomplete="off" class="campo-input" placeholder="complemento">
+                               <!-- <input type="text" placeholder="complemento" class="campo-input"> -->
+                            </div>
+                            <div class="col-3">
+                                <input type="text" name="bairro" formControlName="bairro" autocomplete="off" class="campo-input" placeholder="Bairro">
+                              <!-- <input type="text" class="campo-input" type="text" formControlName="bairro" placeholder="Bairro" [ngClass]="{'campo-invalido': submitted && g.bairro.errors}">
+                              <div *ngIf="submitted && g.bairro.errors" class="invalido_cadastro">
+                                  <div *ngIf="g.bairro.errors.required">digite o Bairro!</div>
+                              </div> -->
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-5">
+                                  <input type="text" name="cidade" formControlName="cidade" autocomplete="off" class="campo-input" placeholder="Cidade">
+                                  <!-- <input type="text" placeholder="cidade" class="campo-input" formControlName="cidade" [ngClass]="{'campo-invalido': submitted && g.cidade.errors}">
+                                  <div *ngIf="submitted && g.cidade.errors" class="invalido_cadastro">
+                                    <div *ngIf="g.cidade.errors.required">digite a Cidade!</div>
+                                  </div> -->
+                              </div>
+                              <div class="col-1 padding_zero">
+                                  <input type="text" name="estado" formControlName="estado" autocomplete="off" class="campo-input" placeholder="Estado">
+                                <!-- <select class="campo-input" (change)="changeState($event)" formControlName="estado" [ngClass]="{'campo-invalido': submitted && g.estado.errors}">
+                                  <option value="">UF</option>
+                                  <option *ngFor="let state of UF" [ngValue]="state">{{state}}</option>
+                                </select>
+                                  <div *ngIf="submitted && g.estado.errors" class="invalido_cadastro">
+                                    <div *ngIf="g.estado.errors.required">Coloque seu Estado!</div>
+                                  </div> -->
+                              </div>
+                              <div class="col-4">
+                                  <input type="text" name="cep" formControlName="cep" autocomplete="off" class="campo-input" placeholder="cep">
+                                <!-- <input type="text" placeholder="CEP" [textMask]="{mask: maskcep}" class="campo-input" formControlName="cep" [ngClass]="{'campo-invalido': submitted && g.cep.errors}">
+                                <div *ngIf="submitted && g.cep.errors" class="invalido_cadastro">
+                                  <div *ngIf="g.cep.errors.required">Digite seu CEP!</div>
+                                </div> -->
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row margin_linha box_gray_conta">
+                  <div class="col-sm-12 legenda_conta">
+                    <div class="row">
+                      <div class="col-sm-2 campo-legenda">
+                          <span>{{em}}</span>
+                      </div>
+                      <div class="col-sm-10">
+                        <input type="text" name="email" formControlName="email" autocomplete="off" class="campo-input" placeholder="email">
+                        <!-- <input class="campo-input" type="text" formControlName="email" [ngClass]="{'campo-invalido': submitted && g.email.errors}">
+                        <div *ngIf="submitted && g.email.errors" class="invalido_cadastro">
+                            <div *ngIf="g.email.errors.required">{{dem}}</div>
+                            <div *ngIf="g.email.errors.email">{{dvalem}}</div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row margin_linha box_gray_conta">
+                  <div class="col-sm-12 legenda_conta">
+                    <div class="row">
+                      <div class="col-sm-2 campo-legenda">
+                        <span>{{tel}}</span>
+                      </div>
+                      <div class="col-sm-10">
+                        <input type="text" name="telefone" formControlName="telefone" autocomplete="off" class="campo-input" placeholder="telefone">
+                        <!-- <input class="campo-input" [textMask]="{mask: maskfone}" formControlName="telefone"  [ngClass]="{'campo-invalido': submitted && g.telefone.errors}" >
+                        <div *ngIf="submitted && g.telefone.errors" class="invalido_cadastro">
+                          <div *ngIf="g.telefone.errors.required">{{dtel}}</div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row margin_linha box_gray_conta">
+                  <div class="col-sm-12 legenda_conta">
+                    <div class="row">
+                      <div class="col-sm-2 campo-legenda">
+                          <span>{{s}}</span>
+                      </div>
+                      <div class="col-sm-10">
+                        <div class="col-sm-9">
+                          <input type="password" name="password" formControlName="password" autocomplete="off" class="campo-input" placeholder="Senha">
+                          <!-- <input class="campo-input" type="password" maxlength="10" formControlName="password" [ngClass]="{'campo-invalido': submitted && g.password.errors}">
+                          <div *ngIf="submitted && g.password.errors" class="invalido_cadastro">
+                            <div *ngIf="g.password.errors.required">{{ds}}</div>
+                            <div *ngIf="g.password.errors.minlength">{{dsseis}}</div>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row margin_linha box_gray_conta">
+                    <div class="col-sm-12 legenda_conta">
+                        <div class="row">
+                          <div class="col-sm-2 campo-legenda">
+                              <span>{{rs}}</span>
+                          </div>
+                          <div class="col-sm-10">
+                            <div class="col-sm-9">
+                              <input type="password" name="confirmPassword" formControlName="confirmPassword" autocomplete="off" class="campo-input" placeholder="Confirme a senha">
+                              <!-- <input class="campo-input" type="password" maxlength="10" formControlName="confirmPassword" [ngClass]="{'campo-invalido': submitted && g.confirmPassword.errors }">
+                              <div *ngIf="submitted && g.confirmPassword.errors" class="invalido_cadastro">
+                                  <div *ngIf="g.confirmPassword.errors.required">{{cs}}</div>
+                                  <div *ngIf="g.confirmPassword.errors.mustMatch">{{spiden}}</div>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="row justify-content-center margin_linha">
+                  <div class="col-9">
+                      <div class="row justify-content-center">
+                        <div class="col-sm-6">
+                          <button type="submit" class="btn-enviar_login">ENVIAR</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </form> 
+          </div>
+        </div>
+    </div>
+  </div>
+</modal-conta>
+<modal-conta id="custom-modal-2">
+  <div class="row bg-blue-login justify-content-center">
+      <div class="col-12">
+          <div class="row">
+              <div class="col-md-12 close-login">
+                <span (click)="closeModal('custom-modal-2')">X</span>
+              </div>
+            </div>
+            <div class="row justify-content-center margin_linha">
+              <div class="col-md-12 titulo_conta">
+                <h1>{{conta}}</h1>
+                <span>{{cr}}</span>
+              </div>
+            </div>
+      </div>
+  </div>
+  <div class="row bg-login">
+    <div class="col-md-12">
+        <div class="row justify-content-center">
+          <div class="col-md-5 campo_logo_conta">
+            <img class="logo_login" [src]="logo" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row bg-white-login">
+    <div class="col-md-12">
+      <div class="row justify-content-center">
+        <div class="col-9 titulo_conta">
+            <div class="row justify-content-center margin_linha">
+              <div class="col-sm-4">
+                  <span class="usario">{{new}}</span>
+              </div>
+              <div class="col-sm-4">
+                <span class="login" (click)="openModal('custom-modal-1')" (click)="closeModal('custom-modal-2')">{{conta}}</span>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row justify-content-center margin_linha">
+          <div class="col-6">
+            <form [formGroup]="registerFormLogin" (ngSubmit)="onSubmitLogin(registerFormLogin)" autocomplete="off">
+                <div class="row margin_linha box_gray_conta">
+                  <div class="col-sm-12 legenda_conta">
+                    <div class="row">
+                      <div class="col-sm-2 campo-legenda">
+                          <span>{{l}}</span>
+                      </div>
+                      <div class="col-sm-10">
+                        <input class="campo-input_login" type="email" name="email" formControlName="login"  autocomplete="off" placeholder="Digite seu e-mail">
+                        <!-- <input class="campo-input" type="text" formControlName="login" [ngClass]="{'campo-invalido': submittedlogin && h.login.errors}">
+                        <div *ngIf="submittedlogin && h.login.errors" class="invalido_cadastro">
+                          <div *ngIf="h.login.errors.required">Digite o Login!</div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row margin_linha box_gray_conta">
+                  <div class="col-sm-12 legenda_conta">
+                    <div class="row">
+                      <div class="col-sm-2 campo-legenda">
+                          <span>{{s}}</span>
+                      </div>
+                      <div class="col-sm-10">
+                          <input class="campo-input_login" type="password" name="senha" formControlName="senha"  autocomplete="off" placeholder="Digite sua senha">
+                        <!-- <input class="campo-input" type="password" formControlName="senha" [ngClass]="{'campo-invalido': submittedlogin && h.senha.errors}">
+                        <div *ngIf="submittedlogin && h.senha.errors" class="invalido_cadastro">
+                            <div *ngIf="h.senha.errors.required">Digite sua senha!</div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center margin_linha">
+                  <div class="col-9">
+                      <div class="row justify-content-center">
+                        <div class="col-sm-6">
+                          <button type="sbumit" class="btn-enviar_login">ENTRAR</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</modal-conta>
+

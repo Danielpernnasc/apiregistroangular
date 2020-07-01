@@ -1,0 +1,171 @@
+<div class="row justify-content-center">
+    <div class="col-8 desktop">
+        <div class="row linha-acima" >
+            <div class="font-gray-calvo">
+                <h5>Cadastro</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Fornecedor</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Cadastro</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Fornecedor</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+        <div class="col-8 titulo-parc padding_zero">
+            <h2>Seja nosso Fornecedor</h2>
+            <div class="borda-bottom"></div>
+        </div>
+    </div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 field_forne padding_zero">
+        <h4>Cadastre-se</h4>
+        <div class="row justify-content-center padding-interno">
+                <div class="col-md-12 border_campo_cadastro">
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="row margin_linha">
+                            <div class="col-md-6">
+                                <label for="">Razão Social</label><br>
+                                <input type="text" class="campo_input" formControlName="Social" [ngClass]="{'campo-invalido': submitted && f.Social.errors}">
+                                <div *ngIf="submitted && f.Social.errors" class="invalidocadastro">
+                                    <div *ngIf="f.Social.errors.required">Digite sua Razão Social!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Nome do Cadastro</label><br>
+                                <input type="text" class="campo_input" formControlName="Name" [ngClass]="{'campo-invalido': submitted && f.Name.errors}">
+                                <div *ngIf="submitted && f.Name.errors" class="invalidocadastro">
+                                    <div *ngIf="f.Name.errors.required">Digite o Nome do Cadastro</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-md-6">
+                                <label for="">CNPJ</label><br>
+                                <input type="text"  class="campo_input" formControlName="number_cpnj" [ngClass]="{'campo-invalido': submitted && f.number_cpnj.errors}" [textMask]="{mask: cnpj}">
+                                <div *ngIf="submitted && f.number_cpnj.errors" class="invalidocadastro">
+                                    <div *ngIf="f.number_cpnj.errors.required">Digite o CNPJ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">E-mail</label><br>
+                                <input type="text" class="campo_input" formControlName="email" [ngClass]="{'campo-invalido': submitted && f.email.errors}">
+                                <div *ngIf="submitted && f.email.errors" class="invalidocadastro">
+                                    <div *ngIf="f.email.errors.required">Digite seu Email! para Cadastro</div>
+                                    <div *ngIf="f.email.errors.email">Precisa ser um e-mail válido</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Telefone</label>
+                                <input class="campo_input" [textMask]="{mask: masktel}" type="text" formControlName="fone" [ngClass]="{'campo-invalido': submitted && f.fone.errors}">
+                                <div *ngIf="submitted && f.fone.errors" class="invalidocadastro">
+                                    <div *ngIf="f.fone.errors.required">Digite seu Telefone para Cadastro</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-md-6">
+                                <label for="">Endereço</label><br>
+                                <input type="text" class="campo_input" formControlName="address" [ngClass]="{'campo-invalido': submitted && f.address.errors}">
+                                <div *ngIf="submitted && f.address.errors" class="invalidocadastro">
+                                    <div *ngIf="f.address.errors.required">Digite o Endereço do Local</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" >
+                                <label for="">Segmento</label><br>
+                                <div class="campo_input_select" >
+                                    <select  id="" class="campo_input select_fornc" formControlName="segmento" [ngClass]="{'campo-invalido': submitted && f.segmento.errors}" >
+                                        <option value="">Bebidas</option>
+                                        <option value="">Carnes</option>
+                                        <option value="">Frios e Perecíveis</option>
+                                        <option value="">Higine</option>
+                                        <option value="">Limpeza</option>
+                                        <option value="">Mercearia</option>
+                                        <option value="">Outros</option>
+                                    </select>
+                                </div>
+                                <div *ngIf="submitted && f.segmento.errors" class="invalidocadastro">
+                                    <div *ngIf="f.segmento.errors.required">Escolha o seu Segmento</div>
+                                </div> 
+                                <!-- <input type="text" class="campo_input" formControlName="segmento" [ngClass]="{'campo-invalido': submitted && f.segmento.errors}">
+                                <div *ngIf="submitted && f.segmento.errors" class="invalidocadastro">
+                                    <div *ngIf="f.segmento.errors.required">Digite o seu Segmento</div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-md-2">
+                                <label for="">Número</label>
+                                <input type="text" class="campo_input" formControlName="number" [ngClass]="{'campo-invalido': submitted && f.number.errors}">
+                                <div *ngIf="submitted && f.number.errors" class="invalidocadastro">
+                                    <div *ngIf="f.number.errors.required">Digite o número do local</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="">Complemento</label>
+                                <input type="text" class="campo_input">
+                                
+                            </div>
+                            <div class="col-md-2">
+                                <label for="">CEP</label>
+                                <input type="text" [textMask]="{mask: cep}" class="campo_input" [ngClass]="{'campo-invalido': submitted && f.number.errors}">
+                                <div *ngIf="submitted && f.number.errors" class="invalidocadastro">
+                                    <div *ngIf="f.number.errors.required">Digite o CEP</div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Produto(s)</label>
+                                <input type="text" class="campo_input" formControlName="produto" [ngClass]="{'campo-invalido': submitted && f.produto.errors}">
+                                <div *ngIf="submitted && f.produto.errors" class="invalidocadastro">
+                                    <div *ngIf="f.produto.errors.required">Digite o produto à oferecer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-md-12">
+                                <label for="">Mensagem</label>
+                                <textarea name="" id="" cols="30" rows="10" class="campo_input" formControlName="Mensagem" [ngClass]="{'campo-invalido': submitted && f.Mensagem.errors}"></textarea>
+                                <div *ngIf="submitted && f.Mensagem.errors" class="invalidocadastro">
+                                    <div *ngIf="f.Mensagem.errors.required">Descreva sobre a empresa e o produdo(s) a ser oferecido</div>
+                                    <div *ngIf="f.Mensagem.errors.minlength">O texto precisa ter no mínimo 10 caracteres</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-md-6">
+                                <label for="">Enviar Catálogo</label>
+                                <input type="file"  class="anexar_catalogo" accept=".pdf, .png, .jpg" style="display: none;">
+                                <input name="file" id="file" class="campo_input" placeholder = 'Selecionar arquivo' type="text" readonly="readonly" formControlName="file" [ngClass]="{'campo-invalido': submitted && f.file.errors}">
+                                <div *ngIf="submitted && f.file.errors" class="invalidocadastro">
+                                    <div *ngIf="f.file.errors.required">Não esqueça de anexar o seu catálogo!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <input class="btn-anexar" type="button"  value="Anexar">
+                            </div>
+                            <div class="col-md-2 campo_btn_enviar">
+                                    <button class="btn-enviar">ENVIAR</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</div>
+  

@@ -1,0 +1,1130 @@
+
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Carnes</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Carnes</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Carnes</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco-left margin_linha">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-sm-12 border_gray">
+                        <select class="select_busca" name="" id="">
+                            <option value="">Ordenar Por</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-3 margin-paragrafo">
+                <p>Monstrando 16 resultados de 72</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-9  padding_zero">
+                        <input  class="campo" type="text" placeholder="Buscar Produtos">
+                    </div>
+                    <div class="col-3 lupa_altura">
+                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':30}"></svg-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha espaco-left">
+            <div class="col-md-9 padding_zero">
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne1')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_1" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Acem Bovino Peça</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{k}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                                    </svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne2')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_2" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Alcatra</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{peca}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                                        </svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne3')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_3" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Bife Bovino Patinho</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{k}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne4')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_4" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Bistéca Suína</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{k}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne5')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_5" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Capa de Contra Filé</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{k}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne6')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_6" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Carne Aranha</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{k}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne7')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_7" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Carne Bovina Alcatra</h6>
+                                </div>
+                            </div>
+                            
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{pecak}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne8')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_8" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Carne Bovina Contra Filé</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{k}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne9')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_9">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Carne Bovina Patinho</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{pecak}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne10')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_10">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Carne Moída Congelada</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{grama}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne11')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_11">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Carne Moída Congelada</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{pacote}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne12')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_12">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Contra Filé</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{peca}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne13')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_13">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Coxão Duro</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{k}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('carne14')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="carne_14">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Rolha Alcatra</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{peca}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <h5>Categorias de Produtos</h5>
+                    </div>
+                </div>
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <ul class="pasta">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_bebidas()">
+                                            <h5>Bebidas</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_carnes()">
+                                            <h5>Carnes</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pereciveis()">
+                                            <h5>Perecíveis</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_higiene()">
+                                            <h5>Higiene</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_limpeza()">
+                                            <h5>Limpeza</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_mercearia()">
+                                            <h5>Mercearia</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_hortifruti()">
+                                            <h5>Hortifruti</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pet()">
+                                            <h5>Pet</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12 font-red-calvo">
+                                        <span class="font-red-calvo" (click)="link_categorias_outros()">
+                                            <h5>Outros</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<modal-carne id="carne1">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_1" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne1')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Acem Bovino Peça</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-carne>
+<modal-carne id="carne2">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_2" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne2')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Alcatra</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ peca }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne3">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_3" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne3')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Bife Bovino Patinho</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne4">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_4" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne4')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Bistéca Suína</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne5">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_5" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne5')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Capa de Contra Filé</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne6">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_6" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne6')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Carne Aranha</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne7">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_7" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne7')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Carne Bovina Alcatra</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ pecak }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne8">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_8" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne8')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Carne Bovina Contra Filé</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne9">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_9" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne9')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Carne Bovina Patinho</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ pecak }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne10">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_10" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne10')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Carne Moída Congelada</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ grama }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne11">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_11" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne11')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Carne Moída Congelada</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ pacote }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne12">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_12" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne12')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Contra Filé</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ peca }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne13">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_13" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne13')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Coxão Duro</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+<modal-carne id="carne14">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="carne_14" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('carne14')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Carnes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Rolha Alcatra</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ peca }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-carne>
+

@@ -1,0 +1,76 @@
+<div class="row justify-content-center">
+    <div class="col-8 desktop">
+        <div class="row linha-acima" >
+            <div class="font-gray-calvo">
+                <h5>CRUD</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Clientes</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 margin_top_mobile mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>CRUD</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Clientes</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <div class="row margin_3px">
+            <div class="col-md-12 titulo-parc">
+                <h2>Clientes</h2>
+            </div>
+ 
+        </div>
+        <div class="borda-bottom"></div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                    <br>
+                    <button class="btn btn-success" (click)="getNavigation('cadastro', '')">Novo Cadastro</button>
+                    <br><br>
+                    <table #clienteTable class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <td>id</td>
+                                <td>Nome</td>
+                                <td>Endereço</td>
+                                <td>e-mail</td>
+                                <td>telefone</td>
+                                <td>senha</td>
+                                <td>senha</td>
+                                <td>Ação</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let client of clientes; let i =index;">
+                                <td>{{client.p_id}}</td>
+                                <td>{{client.p_nome}}</td>
+                                <td>{{client.p_endereco}}</td>
+                                <td>{{client.p_email}}</td>
+                                <td>{{client.p_telefone}}</td>
+                                <td>{{client.p_senha}}</td>
+                                <td>{{client.p_confirma}}</td>
+                                <td>
+                                    <button type="button" class="btn btn-success" (click)="getNavigation('cliente', client.p_id)">Ver</button>
+                                    <button type="button" class="btn btn-warning" (click)="getNavigation('editar', client.p_id)">Editar</button>
+                                    <button type="button" class="btn btn-danger" (click)="deleteCliente(client.p_id)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+</div>

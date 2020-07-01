@@ -1,0 +1,245 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima">
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Blog</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Receitas</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Contato</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Receitas</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <h2>Receitas</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="image" [src]="pernil" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-sm-12">
+                <span><svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon></span>
+                <span>15/02/2020</span>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row margin_linha_receita">
+            <div class="col-sm-12 TITULO_RECEITA">
+                <h3>{{receita2}}</h3>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <svg-icon [src]="ingredientes" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                            <div class="col-sm-11 titulo_ingre">
+                                <h3>Ingredientes</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-6 list-ingre">
+                        <ul class="lista_ingredientes">
+                            <li><span>1 pedaço de pernil</span></li>
+                            <li><span>Suco de limões</span></li>
+                            <li><span>1 copo de vinho branco seco</span></li>
+                            <li><span>1 folha de louro</span></li>
+                            <li><span>2 Paios Defumados</span></li>
+                            <li><span>Sal, pimenta do reino</span></li>
+                            <li><span>5 cebolas grandes picadas em tiras</span></li>
+                            <li><span>4 pimentões vermelhos fatiados</span></li>
+                            <li><span>6 dentes de alho espremidos</span></li>
+                            <li><span>Cebolinha verde picada</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <svg-icon [src]="preparo" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                            <div class="col-sm-11 titulo_ingre">
+                                <h3>Modo de Preparo</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-12 preparo">
+                <p>Deixe marinando o pernil de 1 dia para o outro para tomar gosto. Molho para marinar o pernil: suco de limões, 1 copo de vinho, sal, pimenta do reino, louro, 3 dentes de alho espremidos. No dia seguinte, coloque o pernil na assadeira, adicione óleo por cima e cubra com papel de alumínio. Leve ao forno para assar. Quando a carne do pernil estiver macia, tire o papel de alumínio para dourar o pernil. Leve ao fogo o restante do caldo que sobrou da assadeira e acrescente as cebolas fatiadas junto com os dentes de alho fritos e os pimentões fatiados. Fatie o pernil e coloque nesse molho, com um pouco de cebolinha verde picada e molho de pimenta vermelha. Deixe apurar. Se quiser pode colocar uns tomates moídos nesse molho. Sirva com pãezinhos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <button class="btn_prev" (click)="prev()">
+                            <div class="border_seta">
+                                <svg-icon [src]="seta_left" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 titulos_anterior">
+                        <h6>Receita Anterior</h6>
+                        <h3>{{receita1}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 titulos_proxima">
+                        <h6>Próxima Receita</h6>
+                        <h3>{{receita3}}</h3>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn_next" (click)="next()">
+                            <div class="border_seta">
+                                <svg-icon [src]="seta_right" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="col-row">
+            <div class="col-sm-6 titulo_ingre">
+                <h3>Mais Receitas</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row margin_linha">
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_1()">
+                    <img class="image" [src]="tortapalm" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita4}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_2()">
+                    <img class="image" [src]="espcarbo" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita5}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_3()">
+                    <img class="image" [src]="strogon" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita6}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    

@@ -1,0 +1,243 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima">
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Blog</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Receitas</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Contato</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Receitas</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <h2>Receitas</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="image" [src]="strogonoff" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-sm-12">
+                <span><svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon></span>
+                <span>15/02/2020</span>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+    <div class="row margin_linha_receita">
+        <div class="col-sm-12 TITULO_RECEITA">
+            <h3>{{receita5}}</h3>
+        </div>
+    </div>
+    <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <svg-icon [src]="ingredientes" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                            <div class="col-sm-11 titulo_ingre">
+                                <h3>Ingredientes</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-6 list-ingre">
+                        <ul class="lista_ingredientes">
+                            <li><span>1 peça de filé mignon cortado em cubinhos</span></li>
+                            <li><span>2 a 3 cebolas picadas em quadradinhos</span></li>
+                            <li><span>3 dentes de alho espremidos</span></li>
+                            <li><span>1 folha de louro</span></li>
+                            <li><span>Manteiga de lata</span></li>
+                            <li><span>Farinha de trigo</span></li>
+                            <li><span>Catchup</span></li>
+                            <li><span>Sal, pimenta do reino, pápikra doce</span></li>
+                            <li><span>Vinho branco ou conhaque para flambar</span></li>
+                            <li><span>Cogumelos fatiados</span></li>
+                            <li><span>Creme de leite fresco</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <svg-icon [src]="preparo" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                            <div class="col-sm-11 titulo_ingre">
+                                <h3>{{mod}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-12 preparo">
+                <p>Limpe a carne, corte em cubinhos, passe na farinha de trigo e reserve. A parte, leve para dourar as cebolas picadas e o alho espremido na manteiga com um fio de azeite. Quando as cebolas estiverem transparentes, adicione a carne e vá fritando. Com uma colher grande de inox, coloque o vinho ou o conhaque e flambe, jogue por cima da carne ainda pegando fogo. Coloque a folha de louro, a pimenta do reino, a pápikra e vá mexendo. Adicione o catchup e vá mexendo. Tempere com o sal, veja se é necessário acrescentar um pouco de água para não grudar no fundo da panela, e adicione o creme de leite fresco com os cogumelos fatiados. Deixe tomar gosto. Sirva com arroz branco e batatas fritas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-2 offset-sm-1">
+                        <button class="btn_prev" (click)="prev()">
+                            <div class="border_seta">
+                                <svg-icon [src]="seta_left" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-sm-9 titulos_anterior">
+                        <h6>Receita Anterior</h6>
+                        <h3>{{receita5}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 titulos_proxima">
+                        <h6>Próxima Receita</h6>
+                        <h3>{{receita1}}</h3>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn_next" (click)="next()">
+                            <div class="border_seta">
+                                <svg-icon [src]="seta_right" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="col-row">
+            <div class="col-sm-6 titulo_ingre">
+                <h3>Mais Receitas</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row margin_linha">
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_1()">
+                    <img class="image" [src]="pernil" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita2}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_2()">
+                    <img class="image" [src]="quibebandeja" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita3}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_3()">
+                    <img class="image" [src]="tortapalm" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita4}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

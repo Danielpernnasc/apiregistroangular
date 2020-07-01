@@ -1,0 +1,1233 @@
+
+<div class="row">
+    <div class="col-sm-12 padding_zero">
+        <div class="row margin_linha">
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button class="btn_lupa" (click)="openModal('hort1')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <img class="central_produto" [src]="cebola" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Cebola</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button class="btn_lupa" (click)="openModal('hort2')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <img class="central_produto" [src]="batata" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Batata</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort3')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <img class="central_produto" [src]="abobrinha" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Abobrinha</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort4')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <img class="central_produto" [src]="cenoura" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Cenoura</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="row margin_linha">
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort5')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <img class="central_produto" [src]="beterraba" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Beterraba</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort6')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <img class="central_produto" [src]="agriao" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Agrião</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{m}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort7')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <img class="central_produto" [src]="salsa_cebolinha" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Salsa e Cebolinha</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{m}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort8')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <img class="central_produto" [src]="couve" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Couve</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{m}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button class="btn_lupa" (click)="openModal('hort9')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <img [src]="alface" class="central">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Alface Crespa</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{m}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button class="btn_lupa" (click)="openModal('hort10')" >
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <img [src]="alface_americana" alt="" class="central">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Alface Americana</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{m}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort11')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <img [src]="acelga" alt="" class="central">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Acelga</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{m}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort12')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <img [src]="ovo" alt="" class="central">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Ovo</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{m}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button  class="btn_lupa" (click)="openModal('hort13')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <img [src]="laranja" class="central">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Laranja</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button class="btn_lupa" (click)="openModal('hort14')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <img [src]="limao" alt="" class="central">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Limão</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button class="btn_lupa" (click)="openModal('hort15')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <img [src]="maca" alt="" class="central">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Maçã</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="campo_produtos">
+                    <div class="row">
+                        <div class="col-md-12 right_lupa">
+                            <button class="btn_lupa" (click)="openModal('hort16')">
+                                <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <img [src]="melancia" alt="" class="central">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 legenda_produtos">
+                            <h6>Melancia</h6>
+                        </div>
+                    </div>
+                    <div class="row space-bottom">
+                        <div class="centralizar">
+                            <h6>{{k}}</h6>
+                        </div>
+                        <div class="central_right">
+                            <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                            </svg-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div> 
+<modal-hortifruti id="hort1"> 
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="cebola" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort1')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cebola</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-hortifruti>
+<modal-hortifruti id="hort2">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="batata" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort2')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Batata</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-hortifruti>
+<modal-hortifruti id="hort3">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="abobrinha" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort3')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Abobrinha</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-hortifruti>
+<modal-hortifruti id="hort4">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="cenoura" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort4')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Hortifruit</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cenoura</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-hortifruti>
+<modal-hortifruti id="hort5">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="beterraba" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort5')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Beterraba</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-hortifruti>
+<modal-hortifruti id="hort6">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="agriao" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort6')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Agrião</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort7">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="salsa_cebolinha" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort7')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Salsa e Cebolinha</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort8">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="couve" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort8')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Couve</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort9">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="alface" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort9')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Alface Crespa</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort10">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="alface_americana" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort10')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Alface Americana</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort11">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="acelga" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort11')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Alcega</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort12">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="ovo" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort12')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Ovo</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort13">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="laranja" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort13')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Laranja</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort14">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="limao" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort14')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>Hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Limão</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort15">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="maca" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort15')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Maçã</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort16">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="melancia" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort16')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Melancia</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti> 
+<!-- <modal-hortifruti id="hort17">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="coco" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort17')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Coco</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort18">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="maracuja" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort18')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Maracujá</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort19">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="manga" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort19')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Manga</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>
+<modal-hortifruti id="hort20">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="tomate" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('hort20')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-3 tag_right font-red-calvo">
+                        <h5>hortifruti</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Tomate</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ k }}</h3>
+            </div>
+        </div>
+    </div>
+</modal-hortifruti>  -->

@@ -1,0 +1,1260 @@
+
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Perecíveis</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Perecíveis</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Perecíveis</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco-left margin_linha">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-sm-12 border_gray">
+                        <select class="select_busca" name="" id="">
+                            <option value="">Ordenar Por</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-3 margin-paragrafo">
+                <p>Monstrando 16 resultados de 72</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-9  padding_zero">
+                        <input  class="campo" type="text" placeholder="Buscar Produtos">
+                    </div>
+                    <div class="col-3 lupa_altura">
+                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':30}"></svg-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha espaco-left">
+            <div class="col-md-9 padding_zero">
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios1')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_1" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Apresuntado Frimesa</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{p}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                                    </svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios2')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_2"  alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Apresuntado Rezende</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{p}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios3')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_3"  alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Apresuntado Sádia</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{p}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios4')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_4" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Bacon Perdigão</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{p}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios5')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_5" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Batata Congelada Lar</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_2}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios6')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_6" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Batata Palito Mc Cain Tradicional</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_2}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios7')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_7" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Batata Mc Cain Smiles</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{gr_600}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios8')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_8" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Batata Palito Mc Cain Tradicional</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{gr_720}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios9')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_9" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Big Chicken Perdigão</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{gr_600}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios10')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_10" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Cação em Postas Peixe Meggs</h6>
+                                </div>
+                            </div>
+                    
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_1}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios11')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_11" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Cortes Congelados Frango Meio Peito S/ Osso Perdigão</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{kg_1}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios12')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_12">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Costela Congelada Suína Perdigão</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{p}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios13')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_13" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Costela Sadia Suina</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{p}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios14')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_14" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Costela Suina Firmesa</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{p}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"> 
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios15')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_15" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Iogurte Grego Danone Frutas Vermelhas</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{gr_400}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('frios16')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="frio_16" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Iogurte Grego Danone Tradicional</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{gr_400}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <h5>Categorias de Produtos</h5>
+                    </div>
+                </div>
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <ul class="pasta">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_bebidas()">
+                                            <h5>Bebidas</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_carnes()">
+                                            <h5>Carnes</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pereciveis()">
+                                            <h5>Perecíveis</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_higiene()">
+                                            <h5>Higiene</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_limpeza()">
+                                            <h5>Limpeza</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_mercearia()">
+                                            <h5>Mercearia</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_hortifruti()">
+                                            <h5>Hortifruti</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pet()">
+                                            <h5>Pet</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12 font-red-calvo">
+                                        <span class="font-red-calvo" (click)="link_categorias_outros()">
+                                            <h5>Outros</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<modal-frios id="frios1">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_1" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios1')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Apresuntado Frimesa</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ p }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-frios>
+<modal-frios id="frios2">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_2" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios2')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Apresuntado Rezende</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ p }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-frios>
+<modal-frios id="frios3">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_3" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios3')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Apresuntado Sádia</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ p }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-frios>
+<modal-frios id="frios4">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_4" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios4')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Bacon Perdigão</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ p }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-frios>
+<modal-frios id="frios5">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_5" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios5')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Batata Congelada Lar</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  kg_2 }}</h3>
+            </div>
+        </div>
+    </div>   
+</modal-frios>
+<modal-frios id="frios6">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_6" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios6')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Batata Palito Mc Cain Tradicional</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ kg_2 }}</h3>
+            </div>
+        </div>
+    </div>   
+</modal-frios>
+<modal-frios id="frios7">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_7" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios7')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Batata Mc Cain Smiles</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ gr_600 }}</h3>
+            </div>
+        </div>
+    </div>   
+</modal-frios>
+<modal-frios id="frios8">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_8" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios8')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Batata Palito Mc Cain Tradicionalo</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  gr_720 }}</h3>
+            </div>
+        </div>
+    </div>   
+</modal-frios>
+<modal-frios id="frios9">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_9" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios9')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Big Chicken Perdigão</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  gr_600 }}</h3>
+            </div>
+        </div>
+    </div>   
+</modal-frios>
+<modal-frios id="frios10">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_10" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios10')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cação em Postas Peixe Meggs</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  kg_1 }}</h3>
+            </div>
+        </div>
+    </div>   
+</modal-frios>
+<modal-frios id="frios11">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_11" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios11')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Cortes Congelados Frango Meio Peito S/ Osso Perdigão</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ kg_1 }}</h3>
+            </div>
+        </div>
+    </div>   
+</modal-frios>
+<modal-frios id="frios12">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_12" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios12')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Costela Congelada Suína Perdigão</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  p }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-frios>
+<modal-frios id="frios13">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_13" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios13')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Costela Sadia Suina</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ p }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-frios>
+<modal-frios id="frios14">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_14" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios14')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Costela Suina Firmesa</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  p }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-frios>
+<modal-frios id="frios15">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_15" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios15')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Iogurte Grego Danone Frutas Vermelhas</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  gr_400 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-frios>
+<modal-frios id="frios16">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="frio_16" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-9 close">
+                <span class="close" (click)="closeModal('frios16')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Perecíveis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Iogurte Grego Danone Tradicional</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ gr_400 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-frios>

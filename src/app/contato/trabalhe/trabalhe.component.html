@@ -1,0 +1,91 @@
+<div class="row justify-content-center">
+    <div class="col-8 desktop">
+        <div class="row linha-acima" >
+            <div class="font-gray-calvo">
+                <h5>Contato</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Trabalhe na Calvo</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Fale Conosco</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Trabalhe na Calvo</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Trabalhe na Calvo</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding-zero">
+        <div class="row espaco_esquerda">
+            <div class="col-md-5">
+                <h2>Envie seu currículo</h2>
+                <div class="row padding_cont">
+                    <div class="col-sm-12">
+                        <img class="image" [src]="work" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 offset-md-1">
+                <div class="row padding_marg_cont">
+                    <div class="col-sm-12 box_input_work">
+                        <div class="row margin_linha">
+                            <div class="col-sm-12">
+                                <label for="">Nome</label><br>
+                                <input class="campo_input" type="text">
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-6">
+                                <label for="">E-mail</label><br>
+                                <input class="campo_input" type="text">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="">Telefone</label><br>
+                                <input class="campo_input" [textMask]="{mask: mask}" type="text">
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-12">
+                                <label for="">Mensagem</label><br>
+                                <textarea class="campo_input" name="" id="" cols="30" rows="12"></textarea>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-8">
+                                <label for="">Currículo</label><br>
+                                <input type="file"  class="anexar_curriculum" accept=".pdf, .txt" style="display: none;">
+                                <input name="file" id="file" class="campo_input" placeholder = 'Selecionar arquivo' type="text" readonly="readonly">
+                            </div>
+                            <div class="col-sm-4">
+                                <input class="btn-anexar" type="button"  value="Anexar">
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-6">
+                                <button class="btn-enviar">ENVIAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

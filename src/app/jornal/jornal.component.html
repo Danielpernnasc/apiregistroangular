@@ -1,0 +1,186 @@
+<div class="row justify-content-center">
+    <div class="col-8 desktop padding_zero">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Jornal</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Tablóide de Ofertas</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Jornal</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Tablóide de Ofertas</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Jornal</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-9 margin_linha text_empresa">
+        <h5>A Calvo Atacadista oferece todos os dias promoções e informações do nosso Atacado, confirma online ou impresso em nossa loja.</h5>
+    </div>
+</div>
+<div class="row justity-content-center">
+    <div class="col-12 margin_linha display_jornal">
+        <div class="row justify-content-center jornal_desk">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 jornal-titulo-blue">
+                        <h3>JORNAL</h3>
+                        <h1>ESPECIAL</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 bg_blue">
+                        <h1>OFERTAS</h1>
+                        <h4>FINAL DE SEMANA</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <img [src]="logo" alt="" class="central position">
+                    </div>
+                </div>
+                <div class="row justify-content-center espaco_btn">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-12 padding_zero">
+                                <button class="btn_tabloide" (click)="abrirpdffimsemana()">
+                                    <span>Baixar Tablóide</span>
+                                    &nbsp;
+                                    <span>
+                                        <svg-icon [src]='tabloide'></svg-icon>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 jornal-titulo-red">
+                        <h3>JORNAL</h3>
+                        <h1>OFERTAS</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 bg_red">
+                        <h1>SEMANAL</h1>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <img [src]="logo" alt="" class="central position">
+                    </div>
+                </div> 
+                <div class="row justify-content-center espaco_btn">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-12 padding_zero">
+                                <button class="btn_tabloide" (click)= abrirpdfsemanal()>
+                                    <span>Baixar Tablóide</span>
+                                    &nbsp;
+                                    <span>
+                                        <svg-icon [src]='tabloide'></svg-icon>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center jornal_mob">
+            <div class="col-md-4 jornal">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 jornal-titulo-blue_mob">
+                        <h3>JORNAL</h3>
+                        <h1>ESPECIAL</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 bg_blue_mob">
+                        <h1>OFERTAS</h1>
+                        <h4>FINAL DE SEMANA</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <img [src]="logo" alt="" class="central position_mob">
+                    </div>
+                </div>
+                <div class="row justify-content-center espaco_btn">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-12 padding_zero">
+                                <button class="btn_tabloide" (click)="abrirpdffimsemana()">
+                                    <span>Baixar Tablóide</span>
+                                    &nbsp;
+                                    <span>
+                                        <svg-icon [src]='tabloide'></svg-icon>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 jornal">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 jornal-titulo-red_mob">
+                        <h3>JORNAL</h3>
+                        <h1>OFERTAS</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 bg_red_mob">
+                        <h1>SEMANAL</h1>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <img [src]="logo" alt="" class="central position_mob">
+                    </div>
+                </div> 
+                <div class="row justify-content-center espaco_btn">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-12 padding_zero">
+                                <button class="btn_tabloide" (click)="abrirpdfsemanal()">
+                                    <span>Baixar Tablóide</span>
+                                    &nbsp;
+                                    <span>
+                                        <svg-icon [src]='tabloide'></svg-icon>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12">
+    </div>
+</div>
+<div class="margin_linha"></div>

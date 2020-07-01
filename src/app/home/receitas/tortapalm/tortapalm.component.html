@@ -1,0 +1,267 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima">
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Blog</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Receitas</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Contato</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Receitas</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <h2>Receitas</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="image" [src]="tortapalm" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-sm-12">
+                <span><svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon></span>
+                <span>15/02/2020</span>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row margin_linha_receita">
+            <div class="col-sm-12 TITULO_RECEITA">
+                <h3>{{receita4}}</h3>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <svg-icon [src]="ingredientes" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                            <div class="col-sm-11 titulo_ingre">
+                                <h3>{{ingre}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-6 list-ingre">
+                        <h5>Massa Podre Básica</h5>
+                        <ul class="lista_ingredientes">
+                            <li><span>14 colheres de sopa bem cheias de farinha de trigo</span></li>
+                            <li><span>4 colheres de sopa bem cheias de margarina (quase 500 g)</span></li>
+                            <li><span>1 xícara de café de leite</span></li>
+                            <li><span>2 gemas de ovos</span></li>
+                            <li><span>Sal e açúcar</span></li>
+                            <li><span>1 colher de chá de fermento em pó</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6 list-ingre">
+                        <h5>Recheio</h5>
+                        <ul class="lista_ingredientes">
+                            <li><span>3 vidros de palmito de boa qualidade de preferência de açaí ou Jussara</span></li>
+                            <li><span>1 lata de boa qualidade de ervilha</span></li>
+                            <li><span>4 colheres de sopa cheias de azeitona verde fatiadas</span></li>
+                            <li><span>2 cebolas grandes picados</span></li>
+                            <li><span>3 dentes de alho</span></li>
+                            <li><span>2 cubos de caldo de galinha</span></li>
+                            <li><span>3 tomates cortados em cubinhos</span></li>
+                            <li><span>Sal, pimenta do reino, cebolinha picada</span></li>
+                            <li><span>Leite</span></li>
+                            <li><span>Maizena</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <svg-icon [src]="preparo" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                    </div>
+                    <div class="col-sm-11 titulo_ingre">
+                        <h3>{{m_prep}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-12 preparo">
+                <h5>{{mas}}</h5>
+                <p>Em uma vasilha coloque a farinha de trigo e no centro coloque todos os Ingredientes restantes. Vá sovando a massa até que ela fique homogênea e não fique pegando no fundo da vasilha. Caso haja necessidade, acrescente mais um pouco de farinha e torne a sovar a massa.</p>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-12 preparo">
+                <h5>{{rech}}</h5>
+                <p>Refogue no azeite as cebolas e o alho picado e doure bem. Acrescente o palmito cortado em rodelas com os tomates picados e vá mexendo. Coloque os cubos de galinha esfarelados e o leite até cobrir os palmitos. A parte, dissolva 2 colheres de sopa bem cheias de maizena em um pouco de leite e acrescente ao refogado e vá mexendo. Coloque a ervilha, as azeitonas picadas e acerte o sal e a pimenta do reino. Desligue o fogo e coloque as cebolinhas picadas.</p>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-12 preparo">
+                <h5>{{mod}}</h5>
+                <p>Unte uma forma redonda com o fundo falso com margarina e farinha de trigo. Vá abrindo a massa com as mãos e colocando no fundo e laterais da forma. Coloque o recheio já morno. Com o auxílio de uma faca, vá soltando um pouco das laterais da massa e vire para dentro. Abra a massa com as mãos e vá cobrindo a parte de cima da torta.
+                    Pincele a torta com gema de ovo e leve ao forno para assar.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-2 offset-sm-1">
+                            <button class="btn_prev" (click)="prev()">
+                                <div class="border_seta">
+                                    <svg-icon [src]="seta_left" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-sm-6 titulos_anterior">
+                            <h6>Receita Anterior</h6>
+                            <h3>{{receita3}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-9 titulos_proxima">
+                            <h6>Próxima Receita</h6>
+                            <h3>{{receita5}}</h3>
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="btn_next" (click)="next()">
+                                <div class="border_seta">
+                                    <svg-icon [src]="seta_right" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="col-row">
+            <div class="col-sm-6 titulo_ingre">
+                <h3>Mais Receitas</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row margin_linha">
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_1()">
+                    <img class="image" [src]="strogonoff" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita6}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_2()">
+                    <img class="image" [src]="feijoada" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita1}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_3()">
+                    <img class="image" [src]="pernil" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita2}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

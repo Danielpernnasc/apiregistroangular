@@ -1,0 +1,238 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima">
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Blog</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Receitas</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Contato</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Receitas</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <h2>Receitas</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="image" [src]="espaguetecarbonara" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-sm-12">
+                <span><svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon></span>
+                <span>15/02/2020</span>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+    <div class="row margin_linha_receita">
+        <div class="col-sm-12 TITULO_RECEITA">
+            <h3>{{receita5}}</h3>
+        </div>
+    </div>
+    <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <svg-icon [src]="ingredientes" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                            <div class="col-sm-11 titulo_ingre">
+                                <h3>Ingredientes</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-6 list-ingre">
+                        <ul class="lista_ingredientes">
+                            <li><span>500g de espaguete de grano duro</span></li>
+                            <li><span>12 gemas de ovos batidos com um garfo</span></li>
+                            <li><span>3 dentes de alho espremidos</span></li>
+                            <li><span>1 pacote de bacon picado bem pequeninhos</span></li>
+                            <li><span>Azeite, sal, pimenta do reino e salsinha</span></li>
+                            <li><span>Queijo parmesão ralado</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <svg-icon [src]="preparo" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                            <div class="col-sm-11 titulo_ingre">
+                                <h3>Modo de Preparo</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin_linha">
+            <div class="col-12 preparo">
+                <p>Em um pouco de azeite, doure o bacon cortadinho e em seguida adicione o alho para dar uma dourada. Acrescente o sal e a pimenta do reino e reserve. Cozinhe o espaguete meio al dente, escorra e volte para panela. Adicione o bacon dourado e vá mexendo. Em seguida coloque as gemas dos ovos batidos, dê uma misturada e passe para a travessa que irá servir. Salpique com queijo parmesão ralado e a salsinha picada. Sirva em seguida.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-2 offset-sm-1">
+                        <button class="btn_prev" (click)="prev()">
+                            <div class="border_seta">
+                                <svg-icon [src]="seta_left" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>    
+                        </button>
+                    </div>
+                    <div class="col-sm-8 titulos_anterior">
+                        <h6>Receita Anterior</h6>
+                        <h3>{{receita4}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 titulos_proxima">
+                        <h6>Próxima Receita</h6>
+                        <h3>{{receita6}}</h3>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn_next" (click)="next()">
+                            <div class="border_seta">
+                                <svg-icon [src]="seta_right" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="borda-bottom-fino"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="col-row">
+            <div class="col-sm-6 titulo_ingre">
+                <h3>Mais Receitas</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8">
+        <div class="row margin_linha">
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_1()">
+                    <img class="image" [src]="feijoada" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita1}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_2()">
+                    <img class="image" [src]="pernil" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <span>
+                            <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        </span>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita2}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="btn_invisible" (click)="receita_3()">
+                    <img class="image" [src]="quibebandeja" alt="">
+                </span>
+                <div class="row">
+                    <div class="col-sm-12 padding_calendar">
+                        <svg-icon [src]="calendario" [svgStyle]="{ 'width.px':40 }"></svg-icon>
+                        <span>15/02/2020</span>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 TITULO_RECEITA">
+                        <h6>{{receita3}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

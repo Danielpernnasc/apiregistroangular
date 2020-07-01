@@ -1,0 +1,139 @@
+<div class="row justify-content-center">
+    <div class="col-8 desktop">
+        <div class="row linha-acima" >
+            <div class="font-gray-calvo">
+                <h5>Contato</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Fale Conosco</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 margin_top_mobile mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Contato</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Fale Conosco</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 titulo-parc padding_zero">
+        <div class="row margin_3px">
+            <div class="col-md-6 titulo-parc">
+                <h2>Fale Conosco</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn-work" (click)="trabalhe_conosco()">
+                            TRABALHE CONOSCO
+                        </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn-sale" (click)="televendas()">
+                            <div class="row">
+                                <div class="col-sm-12 btn-sale_text">
+                                    <span>TELEVENDAS</span>
+                                    &nbsp;
+                                    <span>
+                                        <svg-icon [src]="tel_sale" [svgStyle]="{'width.px':30}"></svg-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco_esquerda">
+            <div class="col-md-5 address-cont padding_zero">
+                <h2>Endereço</h2>
+                <div class="row padding_cont">
+                    <div class="col-sm-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.903137840245!2d-46.50882804939331!3d-23.571922067792354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6770758a867b%3A0xbdd2c7e9016622c0!2sAv.%20Rio%20das%20Pedras%2C%202118%20-%20Jardim%20Aricanduva%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003452-100!5e0!3m2!1spt-BR!2sbr!4v1582290819582!5m2!1spt-BR!2sbr"
+                            width="100%" height="413px" frameborder="0" style="border-radius: 8px;" allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="row desktop_800px">
+                    <div class="col-sm-12 endereco_calvo">
+                        <p>{{address_calvo}}</p>
+                    </div>
+                </div>
+                <div class="row mobile_800px">
+                    <div class="col-sm-12 endereco_calvo_mob">
+                        <p>{{address_calvo}}</p>
+                    </div>
+                </div>
+                <div class="row desktop_800px">
+                    <div class="col-sm-6 subt_tel_cont">
+                        <span>Tel:</span>
+                        <span class="fone_cont">{{telefone_calvo}}</span>
+                    </div>
+                    <div class="col-sm-6 subt_email_cont">
+                        <span>{{email_calvo}}</span>
+                    </div>
+                </div>
+                <div class="row mobile_800px">
+                    <div class="col-sm-12 endereco_fale_mob">
+                        <span>Tel:</span>
+                        <span class="fone_cont">{{telefone_calvo}}</span>
+                    </div>
+                    <div class="col-sm-12 email_fale_mob">
+                        <span>{{email_calvo}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 offset-md-1 address-cont">
+                <h2>Contato</h2>
+                <div class="row padding_marg_cont">
+                    <div class="col-sm-12 box_input">
+                        <div class="row margin_linha">
+                            <div class="col-sm-12">
+                                <label for="">Nome</label><br>
+                                <input class="campo_input" type="text">
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-6">
+                                <label for="">E-mail</label><br>
+                                <input class="campo_input" type="text">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="">Telefone</label><br>
+                                <input class="campo_input" [textMask]="{mask: mask}" type="text">
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-12">
+                                <label for="">Mensagem</label><br>
+                                <textarea class="campo_input" name="" id="" cols="30" rows="12"></textarea>
+                            </div>
+                        </div>
+                        <div class="row margin_linha">
+                            <div class="col-sm-6">
+                                <button class="btn-enviar">ENVIAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

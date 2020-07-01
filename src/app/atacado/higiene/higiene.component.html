@@ -1,0 +1,1259 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Higiene</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Higiene</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <h2>Higiene</h2>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco-left margin_linha">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-sm-12 border_gray">
+                        <select class="select_busca" name="" id="">
+                            <option value="">Ordenar Por</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-3 margin-paragrafo">
+                <p>Monstrando 16 resultados de 72</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-9  padding_zero">
+                        <input  class="campo" type="text" placeholder="Buscar Produtos">
+                    </div>
+                    <div class="col-3 lupa_altura">
+                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':30}"></svg-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha">
+            <div class="padding_zero col-md-9 espaco-left">
+                <div class="row margin_linha padding_zero">
+                    <div class= "col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi1')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_1" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Absorvente Sempre Livre Especial com Abas</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="col-sm-8 centralizar">
+                                    <p>{{promocao}}</p>
+                                </div>
+                                <div class="col-sm-4 central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }">
+                                    </svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi2')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_2" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Condicionador Garnier Fructis Óleo</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi3')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_3" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Condicionar Elseve Argina Resist X3</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{ml_5}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi4')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_4" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Condicionar Monange Rosa</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{ml_35}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class=" col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi5')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_5" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Condicionar Monange Verde</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{ml_35}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi6')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_6" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Condicionar Neutrox</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_230}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi7')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_7" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Condicionar Tresemme Hidratação Profunda</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{ml_4}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class=" col-sm-3">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi8')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_8" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Creme Dental Oral B</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_90}}</h6>
+                                </div>
+                                <div class="centralizar">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3 ">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi9')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_9" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Creme Dental Oral B 3D</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_70}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi10')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_10" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Creme Dental Oral B 3D White</h6>
+                                </div>
+                            </div>
+                    
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_70}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi11')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_11" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Desodorante Nívea Dry Comfort</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_90}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi12')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="central_produto" [src]="higi_12" alt="" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Desodorante Nívea For Men Cool Kick</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{Aer}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin_linha">
+                    <div class="col-sm-3 ">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi13')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img [src]="higi_13" class="central_produto" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Desodorante Nívea For Men Invisible</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{Aer}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi14')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img [src]="higi_14" class="central_produto" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Desodorante Nívea Invisible Feminino</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{Aer}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi15')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img [src]="higi_15" class="central_produto" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Sabonete Dove</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_90}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{ 'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="campo_produtos">
+                            <div class="row">
+                                <div class="col-md-12 right_lupa">
+                                    <button (click)="openModal('higi16')" class="btn_lupa">
+                                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':25}"></svg-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img [src]="higi_16" class="central_produto" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 legenda_produtos">
+                                    <h6>Sabonete Francis Luxo</h6>
+                                </div>
+                            </div>
+                            <div class="row space-bottom">
+                                <div class="centralizar">
+                                    <h6>{{g_90}}</h6>
+                                </div>
+                                <div class="central_right">
+                                    <svg-icon [src]="orcamento" [svgStyle]="{'width.px':50 }"></svg-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <h5>Categorias de Produtos</h5>
+                    </div>
+                </div>
+                <div class="row campo_categoria">
+                    <div class="col-md-12">
+                        <ul class="pasta">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_bebidas()">
+                                            <h5>Bebidas</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_carnes()">
+                                            <h5>Carnes</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pereciveis()">
+                                            <h5>Perecíveis</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_higiene()">
+                                            <h5>Higiene</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_limpeza()">
+                                            <h5>Limpeza</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_mercearia()">
+                                            <h5>Mercearia</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_hortifruti()">
+                                            <h5>Hortifruti</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_pet()">
+                                            <h5>Pet</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="font-red-calvo" (click)="link_categorias_institucional()">
+                                            <h5>Institucional</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12 font-red-calvo">
+                                        <span class="font-red-calvo" (click)="link_categorias_outros()">
+                                            <h5>Outros</h5>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="border_bottom_"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<modal-higiene id="higi1">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_1" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi1')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Absorvente Sempre Livre Especial com Abas</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ promocao }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-higiene>
+<modal-higiene id="higi2">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_2" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi2')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Condicionador Garnier Fructis Óleo</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{  ml_5 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-higiene>
+<modal-higiene id="higi3">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_3" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi3')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Condicionar Elseve Argina Resist X3</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_5 }}</h3>
+            </div>
+        </div>
+    </div>  
+</modal-higiene>
+<modal-higiene id="higi4">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_4" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi4')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Condicionar Monange Rosa</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_35 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi5">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_5" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi5')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Condicionar Monange Verde</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_35 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi6">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_6" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi6')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Condicionar Neutrox</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_230 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi7">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_7" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi7')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Condicionar Tresemme Hidratação Profunda</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ ml_4 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi8">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_8" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi8')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Creme Dental Oral B</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_90 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi9">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_9" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi9')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Creme Dental Oral B 3D</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_70 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi10">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_10" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi10')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Creme Dental Oral B 3D White</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_70 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi11">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_11" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi11')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Desodorante Nívea Dry Comfort</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_90 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi12">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_12" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi12')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Desodorante Nívea For Men Cool Kick</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ Aer }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi13">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_13" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi13')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Desodorante Nívea For Men Invisible</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ Aer }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi14">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_14" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi14')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Desodorante Nívea Invisible Feminino</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ Aer }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi15">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_15" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi15')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Sabonete Dove</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_90 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>
+<modal-higiene id="higi16">
+    <div class="col-md-6 background_produto">
+        <img class="central_produto" [src]="higi_16" alt="">
+    </div>
+    <div class="col-md-6 background_descricao">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-10 close">
+                <span class="close" (click)="closeModal('higi16')">&times;</span>
+            </div>
+        </div>
+        <div class="row margin_0">
+            <div class="col-sm-9 offset-sm-1">
+                <div class="row">
+                    <div class="col-sm-5 tag_left">
+                        <h5>Atacado</h5>
+                    </div>
+                    <div class="col-sm-2 seta-meio">
+                        <span>></span>
+                    </div>
+                    <div class="col-sm-5 tag_right font-red-calvo">
+                        <h5>Higiene</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1 titulo_produto">
+                <h3>Sabonete Francis Luxo</h3>
+            </div>
+        </div>
+        <div class="row margin-titulo-modal">
+            <div class="col-sm-10 offset-sm-1">
+                <h3>{{ g_90 }}</h3>
+            </div>
+        </div>
+    </div> 
+</modal-higiene>

@@ -1,0 +1,422 @@
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero desktop">
+        <div class="row linha-acima" >
+            <div class="col-sm-1 font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="col-sm-4 font-red-calvo">
+                <h5>Lista Completa de Produtos</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mobile">
+        <div class="row justify-content-center linha-acima">
+            <div class="font-gray-calvo">
+                <h5>Atacado</h5>
+            </div>
+            <div class="seta_right">
+                <span>></span>
+            </div>
+            <div class="font-red-calvo">
+                <h5>Lista Completa de Produtos</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center margin_linha">
+    <div class="col-8 padding_zero titulo-parc">
+        <div class="row">
+            <div class="col-md-9">
+                <h2>Lista Completa de Produtos</h2>
+            </div>
+            <div class="col-md-3">
+                <button class="btn_lista_compras">
+                    <div class="row">
+                        <div class="col-8 text_btn_lista">
+                            Baixar Lista de Produtos
+                        </div>
+                        <div class="col-4">
+                            <svg-icon [src]="downlist" [svgStyle]="{'width.%':100}"></svg-icon>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="borda-bottom"></div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div class="row espaco-left margin_linha">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-sm-12 border_gray">
+                        <select class="select_busca" name="" id="">
+                            <option value="">Ordenar Por</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-3 margin-paragrafo">
+                <p>Monstrando 16 resultados de 72</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-9  padding_zero">
+                        <input  class="campo" type="text" placeholder="Buscar Produtos">
+                    </div>
+                    <div class="col-3 lupa_altura">
+                        <svg-icon [src]="pesquisar" [svgStyle]="{'width.px':30}"></svg-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list">
+            <div class="col-sm-1 box_lista_top">
+                <span>Nº</span>
+            </div>
+            <div class="col-md-2 box_lista_top">
+                <span>Código Calvo</span>
+            </div>
+            <div class="col-md-3 box_lista_top">
+                <span>Descrição do Produto</span>
+            </div>
+            <div class="col-md-2 box_lista_top_r ">
+                <span>Unidade de Medida</span>
+            </div>
+            <div class="col-md-2 box_lista_top_r">
+                <span>Código EAN</span>
+            </div>
+            <div class="col-md-2 box_lista_top_r_y">
+                <span>Solicitar Orçamento</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id1">
+            <div class="col-sm-1 box_gelo">
+                <span>01</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>55814</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABACATE AVOCADO kg</span>
+                <span class="produto_mobile">ABACATE AVOCADO kg</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>KG</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>55814</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span  class="icone-lista" (click)="selecionar('id1')">
+                    <div id="adicionarid1">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>
+                    <div id="adicionadoid1" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id2">
+            <div class="col-sm-1 box_gelo">
+                <span>02</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>11627</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABACATE kg</span>
+                <span class="produto_mobile">ABACATE kg</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>KG</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>11627</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id2')">
+                    <div id="adicionarid2">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid2" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id3">
+            <div class="col-sm-1 box_gelo">
+                <span>03</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>33458</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABACAXI CALDA FATIAS TOZZI 400g</span>
+                <span class="produto_mobile">ABACAXI CALDA FATIAS TOZZI 400g</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>LA</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>7898909755380</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id3')">
+                    <div id="adicionarid3">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid3" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id4">
+            <div class="col-sm-1 box_gelo">
+                <span>04</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>14881</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABACAXI PEROLA UN</span>
+                <span class="produto_mobile">ABACAXI PEROLA UN</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>UN</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>14881</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id4')">
+                    <div id="adicionarid4">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid4" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id5">
+            <div class="col-sm-1 box_gelo">
+                <span>05</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>13854</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABOBORA BRASILEIRA kg</span>
+                <span class="produto_mobile">ABOBORA BRASILEIRA kg</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>KG</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>13854</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id5')">
+                    <div id="adicionarid5">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid5" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id6">
+            <div class="col-sm-1 box_gelo">
+                <span>06</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>53340</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABOBORA CABOCHA HIG 300g</span>
+                <span class="produto_mobile">ABOBORA CABOCHA HIG 300g</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>BJ</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>7898130660590</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id6')">
+                    <div id="adicionarid6">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid6" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id7">
+            <div class="col-sm-1 box_gelo">
+                <span>07</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>11642</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABOBORA JAPONESA kg</span>
+                <span class="produto_mobile">ABOBORA JAPONESA kg</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>KG</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>11642</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id7')">
+                    <div id="adicionarid7">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid7" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id8">
+            <div class="col-sm-1 box_gelo">
+                <span>08</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>25015</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABOBORA MORANGA kg</span>
+                <span class="produto_mobile">ABOBORA MORANGA kg</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>KG</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>25015</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id8')">
+                    <div id="adicionarid8">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid8" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id9">
+            <div class="col-sm-1 box_gelo">
+                <span>09</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>12016</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABOBORA PAULISTA kg</span>
+                <span class="produto_mobile">ABOBORA PAULISTA kg</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>KG</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>12016</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id9')">
+                    <div id="adicionarid9">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid9" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 padding_zero">
+        <div class="row margin_linha_list adicionar" id="id10">
+            <div class="col-sm-1 box_gelo">
+                <span>10</span>    
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>53342</span>
+            </div>
+            <div class="col-sm-3 box_gelo">
+                <span class="produto_desk">ABOBORA SECA HIG 300g</span>
+                <span class="produto_mobile">ABOBORA SECA HIG 300g</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>BJ</span>
+            </div>
+            <div class="col-sm-2 box_gelo">
+                <span>7898130660286</span>
+            </div>
+            <div class="col-sm-2 box_gelo_orc">
+                <span class="icone-lista" (click)="selecionar('id10')">
+                    <div id="adicionarid10">
+                        <svg-icon [src]='orcamento' [svgStyle]="{'heigth.%':100}"></svg-icon>   
+                    </div>  
+                    <div id="adicionadoid10" class="icone-lista_h6">
+                        <h6>ADICIONADO</h6>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
