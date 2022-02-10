@@ -48,7 +48,7 @@
     "ngx-light-carousel": "^1.1.5",
     "ngx-mask": "^8.1.7",
     "ngx-pagination": "^5.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "rxjs": "~6.5.4",
     "sequelize": "^5.21.9",
     "source-map-loader": "^0.2.4",
